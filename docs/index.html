@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rainbow Documentation</title>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <link rel="stylesheet" href="css/index.css">
     
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="icon" href="images/logos/logo.png"/>
 </head>
 <body>
+    <!-- HEADER -->
     <header id="header">
         <div class="header-buttons">
             <a href="#ch"><i class="fas fa-rainbow fa-1x"></i></a>
@@ -39,21 +42,41 @@
             <a href="" id="header-buttons-github">GitHub</a>            
         </div>
     </header>
-    <section id="ch">
-        <div class="check">
+
+    <div>
+        <img src="images/logos/logo.png" id="rbw-logo"/>
+        <div id="rbwNavScreen">
+            <a href="javascript:void(0)" onclick="navigation()" id="closebtn">&times;</a>
+            <div id="rbwNavScreen-content">
+                <h2 id="rbwNavScreen-content-h2">Rainbow Index</h2>
+                <hr id="hr-line">
+                <ul id="rbw-navlist" class="rbw-list">
+                    <li><a href="#" class="nav-links">Introduction</a></li>
+                    <li><a href="#" class="nav-links">Usage in</a></li>
+                    <ul class="rbw-list sub-list">
+                        <li><a href="#" class="nav-links">Intellij Idea</a></li>
+                        <li><a href="#" class="nav-links">VS Code</a></li>
+                        <li><a href="#" class="nav-links">Eclipse</a></li>
+                    </ul>
+                </ul>
+            </div>
         </div>
-        <div class="check">
-        </div>
-        <div class="check">
-        </div>
-        <div class="check">
-        </div>
-        <div class="check">
-        </div>
+    </div>
+
+    <section id="rbw-documentation">
+        <article>
+            hello world
+        </article>
+        <article>
+            hello world
+        </article>
+        <article>
+            hello world
+        </article>
     </section>
 
     <footer>
-
+        Copyright &copy; TechOUs 2020
     </footer>
 </body>
 </html>

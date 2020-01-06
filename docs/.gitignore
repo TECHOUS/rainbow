@@ -1,3 +1,4 @@
 # IGNORE FILES
 
 .sass-cache
+*.css.map
