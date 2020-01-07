@@ -4,6 +4,13 @@ let screenFlag = false;
 
 rainbowLogo.addEventListener("click", navigation);
 
+if(window.innerWidth <= 425){
+    document.getElementById('header-buttons-list').style.display = "none";
+    document.getElementById('rbw-hidden-nav').style.display = "inline-block";
+} else{
+    document.getElementById('rbw-hidden-nav').style.display = "none";
+}
+
 function navigation(){
     if(screenFlag){
         screenFlag = false;

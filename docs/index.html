@@ -19,8 +19,8 @@
     <!-- HEADER -->
     <header id="header">
         <div class="header-buttons">
-            <a href="#ch"><i class="fas fa-rainbow fa-1x"></i></a>
-            <span id="header-buttons-rainbow"><a href="#ch">Rainbow</a></span>
+            <a href="#rbw-description"><i class="fas fa-rainbow fa-2x"></i></a>
+            <span id="header-buttons-rainbow"><a href="#rbw-description">Rainbow</a></span>
         </div>
         <div class="header-buttons">
             <ul id="header-buttons-list">
@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div class="header-buttons">
-            <div>
+            <div id="header-buttons-search-div">
                 <i class="fas fa-search"></i>
                 <input id="header-buttons-search" type="text" placeholder="search">
             </div>
@@ -48,35 +48,93 @@
         <div id="rbwNavScreen">
             <a href="javascript:void(0)" onclick="navigation()" id="closebtn">&times;</a>
             <div id="rbwNavScreen-content">
+
+                <!-- viewed only for mobiles -->
+                <div id="rbw-hidden-nav">
+                    <ul id="rbw-hidden-ul">
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
                 <h2 id="rbwNavScreen-content-h2">Rainbow Index</h2>
                 <hr id="hr-line">
                 <ul id="rbw-navlist" class="rbw-list">
-                    <li><a href="#" class="nav-links">Introduction</a></li>
-                    <li><a href="#" class="nav-links">Usage in</a></li>
+                    <li><a href="#rbw-description" class="nav-links">Description</a></li>
+                    <li><a href="#" class="nav-links">Rainbow Java Package</a></li>
+                    <ul class="rbw-list sub-list">
+                        <li><a href="#" class="nav-links">Codes class</a></li>
+                        <li><a href="#" class="nav-links">Procedures interface</a></li>
+                        <li><a href="#" class="nav-links">Rainbow class</a></li>
+                    </ul>
+                    <li><a href="#" class="nav-links">Getting Started</a></li>
+                    <li><a href="#" class="nav-links">Library Jar Usage</a></li>
                     <ul class="rbw-list sub-list">
                         <li><a href="#" class="nav-links">Intellij Idea</a></li>
-                        <li><a href="#" class="nav-links">VS Code</a></li>
                         <li><a href="#" class="nav-links">Eclipse</a></li>
+                        <li><a href="#" class="nav-links">VS Code</a></li>
                     </ul>
+                    <li><a href="#" class="nav-links">Github Java Package Use</a></li>
+                    <ul class="rbw-list sub-list">
+                        <li><a href="#" class="nav-links">Intellij Idea</a></li>
+                        <li><a href="#" class="nav-links">Eclipse</a></li>
+                        <li><a href="#" class="nav-links">VS Code</a></li>
+                    </ul>    
+                    <li><a href="#" class="nav-links">Developer Use</a></li>
+                    <ul class="rbw-list sub-list">
+                        <li><a href="#" class="nav-links">Intellij Idea</a></li>
+                        <li><a href="#" class="nav-links">Eclipse</a></li>
+                        <li><a href="#" class="nav-links">VS Code</a></li>
+                    </ul>
+                    <li><a href="#" class="nav-links">Contribution</a></li>
+                    <li><a href="#" class="nav-links">License</a></li>
+                    <li><a href="#" class="nav-links">Version</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <section id="rbw-documentation">
-        <article>
-            hello world
-        </article>
-        <article>
-            hello world
-        </article>
-        <article>
-            hello world
-        </article>
+    <!-- MAIN DOCUMENTATION -->
+
+    <!-- DESCRIPTION -->
+    <section id="rbw-description">
+        <h1>Rainbow</h1>
+        <p>Best Java library to create colorful <br>User Interfaces for Linux terminals.</p>
+        <a href="#rbw-getting-started">
+            <button id="rbw-description-button">Getting Started</button>
+        </a>
+        <a href="#rbw-java-package" id="rbw-description-a">
+            <button id="rbw-description-button-docs">Read Docs ></button>
+        </a>
     </section>
 
+    <section id="rbw-java-package">
+    </section>
+
+    <section id="rbw-getting-started">
+    </section>
+
+    <section id="rbw-library-jar-usage">
+    </section>
+
+    <section id="github-java-package-use">
+    </section>
+
+    <section id="rbw-developer-use"></section>
+
+    <section id="rbw-contribution"></section>
+
+    <section id="rbw-license"></section>
+
+    <section id="rbw-version"></section>
     <footer>
-        Copyright &copy; TechOUs 2020
+        <div id="footer-poweredby">
+            <span id="footer-poweredby-span">Powered By</span>
+            <img src="images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+        </div>
+        <div>
+            Copyright &copy; TechOUs 2020
+        </div>
     </footer>
 </body>
 </html>
