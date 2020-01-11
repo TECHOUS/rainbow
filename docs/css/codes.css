@@ -74,6 +74,41 @@
   background-color: #BAD7F2;
   font-size: 18px; }
 
+#documentation-section {
+  padding-top: 110px; }
+
+.heading {
+  text-align: center; }
+
+.docs-description {
+  padding: 15px;
+  background-color: #BAF2D8;
+  margin: 10px;
+  border-radius: 5px; }
+
+.docs-hr {
+  border: 1px solid #282c34;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.field {
+  border: 2px solid #F2BAC9;
+  margin: 10px;
+  border-radius: 5px; }
+
+.sub-heading {
+  background-color: #BAD7F2;
+  padding: 10px; }
+
+.code-heading {
+  font-family: "Fira Sans", sans-serif;
+  padding: 10px; }
+
+.field-description {
+  padding: 10px; }
+
 footer {
   background-color: #20232A;
   color: white;
