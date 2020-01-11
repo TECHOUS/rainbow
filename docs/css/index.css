@@ -22,6 +22,7 @@
   text-align: center;
   padding: 10px;
   padding-top: 25px;
+  padding-bottom: 25px;
   position: fixed;
   width: 100%; }
 
@@ -63,12 +64,15 @@
 
 #header-buttons-github {
   color: black;
-  text-decoration: none;
+  text-decoration: none; }
+
+#header-buttons-github-div {
   position: absolute;
   top: 0;
   padding: 5px;
-  right: 20px;
-  background-color: #BAD7F2; }
+  right: 0;
+  background-color: #BAD7F2;
+  font-size: 18px; }
 
 #rbw-logo {
   height: 60px;
@@ -246,7 +250,9 @@ section p {
   padding: 10px; }
 
 #rbw-license p {
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 10px;
+  background-color: #BAD7F2; }
 
 footer {
   background-color: #20232A;
