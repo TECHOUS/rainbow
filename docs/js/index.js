@@ -1,15 +1,10 @@
 let rainbowLogo = document.getElementById('rbw-logo');
 let rainbowNavScreen = document.getElementById("rbwNavScreen");
 let screenFlag = false;
+let rainbowNavList = document.getElementById('rbw-navlist');
 
 rainbowLogo.addEventListener("click", navigation);
-
-if(window.innerWidth <= 425){
-    document.getElementById('header-buttons-list').style.display = "none";
-    document.getElementById('rbw-hidden-nav').style.display = "inline-block";
-} else{
-    document.getElementById('rbw-hidden-nav').style.display = "none";
-}
+rainbowNavList.addEventListener('click', navigation);
 
 function navigation(){
     if(screenFlag){

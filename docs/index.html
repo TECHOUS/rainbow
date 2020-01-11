@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rainbow Documentation</title>
+    <title>Rainbow - Java library</title>
     <script src="js/index.js" defer></script>
     <link rel="stylesheet" href="css/index.css">
     
@@ -23,13 +23,6 @@
             <span id="header-buttons-rainbow"><a href="#rbw-description">Rainbow</a></span>
         </div>
         <div class="header-buttons">
-            <ul id="header-buttons-list">
-                <li><a href="">Tutorials</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Community</a></li>
-            </ul>
-        </div>
-        <div class="header-buttons">
             <div id="header-buttons-search-div">
                 <i class="fas fa-search"></i>
                 <input id="header-buttons-search" type="text" placeholder="search">
@@ -38,57 +31,49 @@
         <div class="header-buttons">
             <span id="header-buttons-version">v1.0.0</span>
         </div>
-        <div class="header-buttons">
-            <a href="" id="header-buttons-github">GitHub</a>            
+        <div class="header-buttons" id="">
+            <a href="https://github.com/TechOUs/rainbow" id="header-buttons-github">GitHub</a>            
         </div>
     </header>
 
+    <!-- INDEX MENU -->
     <div>
         <img src="images/logos/logo.png" id="rbw-logo"/>
         <div id="rbwNavScreen">
             <a href="javascript:void(0)" onclick="navigation()" id="closebtn">&times;</a>
             <div id="rbwNavScreen-content">
-
-                <!-- viewed only for mobiles -->
-                <div id="rbw-hidden-nav">
-                    <ul id="rbw-hidden-ul">
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Community</a></li>
-                    </ul>
-                </div>
                 <h2 id="rbwNavScreen-content-h2">Rainbow Index</h2>
                 <hr id="hr-line">
                 <ul id="rbw-navlist" class="rbw-list">
                     <li><a href="#rbw-description" class="nav-links">Description</a></li>
-                    <li><a href="#" class="nav-links">Rainbow Java Package</a></li>
+                    <li><a href="#documentation-section-hr" class="nav-links">Rainbow Java Package</a></li>
                     <ul class="rbw-list sub-list">
-                        <li><a href="#" class="nav-links">Codes class</a></li>
-                        <li><a href="#" class="nav-links">Procedures interface</a></li>
-                        <li><a href="#" class="nav-links">Rainbow class</a></li>
+                        <li><a href="#class-codes-hr" class="nav-links">Class Codes</a></li>
+                        <li><a href="#interface-procedures-hr" class="nav-links">Interface Procedures</a></li>
+                        <li><a href="#class-rainbow-hr" class="nav-links">Class Rainbow</a></li>
                     </ul>
-                    <li><a href="#" class="nav-links">Getting Started</a></li>
-                    <li><a href="#" class="nav-links">Library Jar Usage</a></li>
+                    <li><a href="#getting-started-hr" class="nav-links">Getting Started</a></li>
+                    <li><a href="#library-jar-use-hr" class="nav-links">Library Jar Use</a></li>
                     <ul class="rbw-list sub-list">
                         <li><a href="#" class="nav-links">Intellij Idea</a></li>
                         <li><a href="#" class="nav-links">Eclipse</a></li>
                         <li><a href="#" class="nav-links">VS Code</a></li>
                     </ul>
-                    <li><a href="#" class="nav-links">Github Java Package Use</a></li>
+                    <li><a href="#github-java-package-use-hr" class="nav-links">Github Java Package Use</a></li>
                     <ul class="rbw-list sub-list">
                         <li><a href="#" class="nav-links">Intellij Idea</a></li>
                         <li><a href="#" class="nav-links">Eclipse</a></li>
                         <li><a href="#" class="nav-links">VS Code</a></li>
                     </ul>    
-                    <li><a href="#" class="nav-links">Developer Use</a></li>
+                    <li><a href="#developer-use-hr" class="nav-links">Developer Use</a></li>
                     <ul class="rbw-list sub-list">
                         <li><a href="#" class="nav-links">Intellij Idea</a></li>
                         <li><a href="#" class="nav-links">Eclipse</a></li>
                         <li><a href="#" class="nav-links">VS Code</a></li>
                     </ul>
-                    <li><a href="#" class="nav-links">Contribution</a></li>
-                    <li><a href="#" class="nav-links">License</a></li>
-                    <li><a href="#" class="nav-links">Version</a></li>
+                    <li><a href="#contribution-hr" class="nav-links">Contribution</a></li>
+                    <li><a href="#LICENSE-hr" class="nav-links">LICENSE</a></li>
+                    <li><a href="#version-hr" class="nav-links">Version</a></li>
                 </ul>
             </div>
         </div>
@@ -100,33 +85,254 @@
     <section id="rbw-description">
         <h1>Rainbow</h1>
         <p>Best Java library to create colorful <br>User Interfaces for Linux terminals.</p>
-        <a href="#rbw-getting-started">
+        <a href="#getting-started-hr">
             <button id="rbw-description-button">Getting Started</button>
         </a>
-        <a href="#rbw-java-package" id="rbw-description-a">
+        <a href="#documentation-section-hr" id="rbw-description-a">
             <button id="rbw-description-button-docs">Read Docs ></button>
         </a>
     </section>
 
+    <!-- RAINBOW PACKAGE DOCUMENTATION -->
+    <hr class="section-hr" id="documentation-section-hr">
     <section id="rbw-java-package">
+        <h2 class="rbw-java-package-heading">
+            <i class="fas fa-archive"></i>&nbsp;
+            RAINBOW JAVA PACKAGE
+        </h2>
+        
+        <!-- CLASS CODES -->
+        <hr class="section-hr" id="class-codes-hr">
+        <article id="class-codes">
+            <h2 class="rbw-java-package-sub-heading">
+                <i class="fas fa-copyright"></i>&nbsp;
+                Class Codes
+            </h2>
+            <hr class="documentation-hr">
+            <!-- <div class="docs-object-hrierachy">
+                <span class="bold">Package</span> org.techous.rainbow<br/>
+                class &nbsp;<span class="bold">Codes</span><br/>
+                extends &nbsp;java.lang.Object
+            </div> -->
+            <!-- <div class="docs-field-details-div">
+                    <h4>RESET</h4>
+                    <p>public static final String <span class="bold">RESET</span></p>
+                    <p>color reseter</p>
+                </div> -->
+            <div class="method-description">
+                <p>This class contains all the color codes used for rainbow class.</p>
+                <h3>Since</h3>
+                <p>1.0</p>
+            </div>
+            
+            <div class="docs-field-details">
+                <h3 class="docs-field-details-h3">Field Details</h3>    
+                <div class="docs-field-details-div">
+                    <h4 class="docs-field-details-h4">Formats</h4>
+                    <ul class="docs-field-details-list">
+                        <li><a href="#">RESET</a></li>
+                        <li><a href="#">BOLD</a></li>
+                        <li><a href="#">ITALIC</a></li>
+                        <li><a href="#">UNDERLINE</a></li>
+                        <li><a href="#">BLINK</a></li>
+                        <li><a href="#">HIDDEN</a></li>
+                        <li><a href="#">CUT</a></li>
+                        <li><a href="#">DOUBLELINE</a></li>
+                        <li><a href="#">OVERLINE</a></li>
+                    </ul>
+                </div>
+                <div class="docs-field-details-div">
+                    <h4 class="docs-field-details-h4">Colors</h4>
+                    <ul class="docs-field-details-list">
+                        <li><a href="#">DEFAULT</a></li>
+                        <li><a href="#">LGREEN</a></li>
+                        <li><a href="#">MGREEN</a></li>
+                        <li><a href="#">DGREEN</a></li>
+                        <li><a href="#">LRED</a></li>
+                        <li><a href="#">DRED</a></li>
+                        <li><a href="#">LWHITE</a></li>
+                        <li><a href="#">DWHITE</a></li>
+                        <li><a href="#">LBLUE</a></li>
+                        <li><a href="#">DBLUE</a></li>
+                        <li><a href="#">LCYAN</a></li>
+                        <li><a href="#">DCYAN</a></li>
+                        <li><a href="#">ORANGE</a></li>
+                        <li><a href="#">BLACK</a></li>
+                        <li><a href="#">MAGENTA</a></li>
+                        <li><a href="#">YELLOW</a></li>
+                        <li><a href="#">LEMON</a></li>
+                        <li><a href="#">PINK</a></li>
+                    </ul>
+                </div>
+                <div class="docs-field-details-div">
+                    <h4 class="docs-field-details-h4">Backgrounds</h4>
+                    <ul class="docs-field-details-list">
+                        <li><a href="">BGDGREEN</a></li>
+                        <li><a href="">BGLGREEN</a></li>
+                        <li><a href="">BGMGREEN</a></li>
+                        <li><a href="">BGDRED</a></li>
+                        <li><a href="">BGLRED</a></li>
+                        <li><a href="">BGDORANGE</a></li>
+                        <li><a href="">BGLORANGE</a></li>
+                        <li><a href="">BGLBLUE</a></li>
+                        <li><a href="">BGLWHITE</a></li>
+                        <li><a href="">BGDWHITE</a></li>
+                        <li><a href="">BGLEMON</a></li>
+                        <li><a href="">BGMPINK</a></li>
+                        <li><a href="">BGDPINK</a></li>
+                        <li><a href="">BGLPINK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <hr class="section-hr" id="interface-procedures-hr">
+        <!-- PROCEDURES INTERFACE -->
+        <article id="interface-procedures">
+            <h2 class="rbw-java-package-sub-heading">
+                <i class="fas fa-info-circle"></i>&nbsp;
+                Interface Procedures
+            </h2>
+
+            <hr class="documentation-hr">
+            <!-- <div class="docs-object-hrierachy">
+                <span class="bold">Package</span> org.techous.rainbow<br/>
+                interface &nbsp;<span class="bold">Procedures</span>
+            </div> -->
+            
+            <div class="method-description">
+                <p>This class contains all the methods implemented for rainbow class.</p>
+                <h3>Since</h3>
+                <p>1.0</p>
+            </div>
+
+            <div class="docs-method-details">
+                <h3 class="docs-method-details-h3">Method Details</h3>
+                <ul class="docs-method-details-list">
+                    <li><a href="">get(String value)</a></li>
+                    <li><a href="">getFormat(String format)</a></li>
+                    <li><a href="">getColor(String color)</a></li>
+                    <li><a href="">getBG(String background)</a></li>
+                    <li><a href="">getFormatColor(String format, String color)</a></li>
+                    <li><a href="">getFormatBG(String format, String background)</a></li>
+                    <li><a href="">getColorBG(String color, String background)</a></li>
+                    <li><a href="">getRainbow(String format, String color, String background)</a></li>
+                    <li><a href="">getFormatString(String format, String str, boolean end)</a></li>
+                    <li><a href="">getColorString(String color, String str, boolean end)</a></li>
+                    <li><a href="">getBGString(String background, String str, boolean end)</a></li>
+                    <li><a href="">getFormatColorString(String format, String color, String str, boolean end)</a></li>
+                    <li><a href="">getFormatBGString(String format, String background, String str, boolean end)</a></li>
+                    <li><a href="">getColorBGString(String color, String background, String str, boolean end)</a></li>
+                    <li><a href="">getRainbowString(String format, String color, String background, String str, boolean end)</a></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- CLASS RAINBOW-->
+        <hr class="section-hr" id="class-rainbow-hr">
+        <article id="class-rainbow">
+            <h2 class="rbw-java-package-sub-heading">
+                <i class="fas fa-copyright"></i>&nbsp;
+                Class Rainbow
+            </h2>
+            <hr class="documentation-hr">
+            <div class="method-description">
+                <p>This class contains the implementation of core methods for this library.</p>
+                <h3>Since</h3>
+                <p>1.0</p>
+            </div>
+            <div class="docs-constructors">
+                <h3 class="docs-constructors-h3">Constructors</h3>
+                <ul class="docs-constructors-list">
+                    <li><a href="">Rainbow()</a></li>
+                </ul>
+            </div>
+            <div class="docs-method-details">
+                <h3 class="docs-method-details-h3">Method Details</h3>
+                <ul class="docs-method-details-list">
+                    <li><a href="">get(String value)</a></li>
+                    <li><a href="">getFormat(String format)</a></li>
+                    <li><a href="">getColor(String color)</a></li>
+                    <li><a href="">getBG(String background)</a></li>
+                    <li><a href="">getFormatColor(String format, String color)</a></li>
+                    <li><a href="">getFormatBG(String format, String background)</a></li>
+                    <li><a href="">getColorBG(String color, String background)</a></li>
+                    <li><a href="">getRainbow(String format, String color, String background)</a></li>
+                    <li><a href="">getFormatString(String format, String str, boolean end)</a></li>
+                    <li><a href="">getColorString(String color, String str, boolean end)</a></li>
+                    <li><a href="">getBGString(String background, String str, boolean end)</a></li>
+                    <li><a href="">getFormatColorString(String format, String color, String str, boolean end)</a></li>
+                    <li><a href="">getFormatBGString(String format, String background, String str, boolean end)</a></li>
+                    <li><a href="">getColorBGString(String color, String background, String str, boolean end)</a></li>
+                    <li><a href="">getRainbowString(String format, String color, String background, String str, boolean end)</a></li>
+                </ul>
+            </div>
+        </article>
     </section>
 
-    <section id="rbw-getting-started">
+    <!-- GETTING STARTED SECTION -->
+    <hr class="section-hr" id="getting-started-hr">
+    <section>
+        <h2>Getting Started</h2>
     </section>
 
+    <!-- LIBRARY JAR USAGE SECTION -->
+    <hr class="section-hr" id="library-jar-usage-hr">
     <section id="rbw-library-jar-usage">
+        <h2>Library Jar Usage</h2>
     </section>
 
+    <!-- GITHUB JAVA PACKAGE USE SECTION-->
+    <hr class="section-hr" id="github-java-package-use-hr">
     <section id="github-java-package-use">
+        <h2>Github Java Package Use</h2>
     </section>
 
-    <section id="rbw-developer-use"></section>
+    <!-- DEVELOPER USE SECTION -->
+    <hr class="section-hr" id="developer-use-hr">
+    <section id="rbw-developer-use">
+        <h2>Developer Use</h2>
+    </section>
 
-    <section id="rbw-contribution"></section>
+    <!-- CONTRIBUTION SECTION -->
+    <hr class="section-hr" id="contribution-hr">
+    <section id="rbw-contribution">
+        <h2>Contribution</h2>
+    </section>
 
-    <section id="rbw-license"></section>
+    <!-- LICENSE SECTION-->
+    <hr class="section-hr" id="LICENSE-hr">
+    <section id="rbw-license">
+        <h2>LICENSE</h2>
+        <h3>MIT License</h3>
+        <p>Copyright (c) 2020 TechOUs</p>
 
-    <section id="rbw-version"></section>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:</p>
+
+        <p>The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.</p>
+
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.</p>
+    </section>
+
+    <!-- VERSION SECTION -->
+    <hr class="section-hr" id="version-hr">
+    <section id="rbw-version">
+        <h2>Version</h2>
+    </section>
+
+    <!-- FOOTER SECTION -->
     <footer>
         <div id="footer-poweredby">
             <span id="footer-poweredby-span">Powered By</span>

@@ -4,6 +4,18 @@
   font-family: "Alegreya", serif;
   scroll-behavior: smooth; }
 
+.code-snippet {
+  background-color: #BAF2D8; }
+
+.bold {
+  font-weight: bold; }
+
+.section-hr {
+  border: 1px solid yellow;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  opacity: 0; }
+
 #header {
   background-color: #20232A;
   color: white;
@@ -32,18 +44,6 @@
 .fa-search {
   color: #BAD7F2; }
 
-#header-buttons-list {
-  list-style-type: none; }
-
-#header-buttons-list > li {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px; }
-
-#header-buttons-list > li > a {
-  text-decoration: none;
-  color: white; }
-
 .header-buttons:nth-child(1) {
   margin: 0px; }
 
@@ -62,8 +62,13 @@
   cursor: pointer; }
 
 #header-buttons-github {
-  color: white;
-  text-decoration: none; }
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  right: 20px;
+  background-color: #BAD7F2; }
 
 #rbw-logo {
   height: 60px;
@@ -103,23 +108,6 @@
   width: 100%;
   color: white; }
 
-#rbw-hidden-nav {
-  width: 90%;
-  display: none;
-  text-align: center;
-  padding: 10px;
-  margin-top: 15px; }
-
-#rbw-hidden-ul > li {
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px; }
-
-#rbw-hidden-ul > li > a {
-  color: #F2E2BA;
-  text-decoration: none;
-  font-size: 22px; }
-
 .rbw-list {
   list-style-type: none; }
 
@@ -149,7 +137,7 @@
 
 section {
   padding: 10px;
-  min-height: 72vh; }
+  min-height: 85vh; }
 
 section p {
   padding: 10px; }
@@ -190,6 +178,75 @@ section p {
   padding: 10px;
   background: transparent;
   color: #F2E2BA; }
+
+.rbw-java-package-heading {
+  font-size: 28px;
+  text-align: center;
+  padding: 5px; }
+
+.rbw-java-package-sub-heading {
+  font-size: 22px;
+  text-align: center; }
+
+.documentation-hr {
+  border: 2px solid #F2E2BA;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.method-description p {
+  background-color: #BAF2BB; }
+
+.docs-field-details {
+  padding: 10px; }
+
+.docs-field-details-h3 {
+  text-align: center; }
+
+.docs-field-details-div {
+  background-color: white;
+  margin: 10px;
+  border: 1px solid black; }
+
+.docs-field-details-div h4 {
+  padding: 10px;
+  background-color: #BAF2D8; }
+
+.docs-field-details-list {
+  list-style-type: none; }
+
+.docs-field-details-list > li {
+  padding: 10px; }
+
+.docs-method-details {
+  border: 1px solid black;
+  margin: 10px; }
+
+.docs-method-details-h3 {
+  background-color: #BAF2D8;
+  padding: 10px; }
+
+.docs-method-details-list {
+  list-style-type: none; }
+
+.docs-method-details-list > li {
+  padding: 10px; }
+
+.docs-constructors {
+  border: 1px solid black;
+  margin: 10px; }
+
+.docs-constructors-h3 {
+  background-color: #BAF2D8;
+  padding: 10px; }
+
+.docs-constructors-list {
+  list-style-type: none; }
+
+.docs-constructors-list > li {
+  padding: 10px; }
+
+#rbw-license p {
+  font-size: 20px; }
 
 footer {
   background-color: #20232A;
