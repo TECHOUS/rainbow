@@ -5,7 +5,8 @@
   scroll-behavior: smooth; }
 
 .code-snippet {
-  background-color: #BAF2D8; }
+  background-color: #BAF2D8;
+  padding: 10px; }
 
 .bold {
   font-weight: bold; }

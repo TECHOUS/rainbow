@@ -5,10 +5,31 @@
   scroll-behavior: smooth; }
 
 .code-snippet {
-  background-color: #BAF2D8; }
+  background-color: #BAF2D8;
+  padding: 20px;
+  margin: 5px; }
+
+.copyTextClass {
+  border: none;
+  width: 100%;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  color: black; }
+
+#copyToClipboard1,
+#copyToClipboard2 {
+  position: absolute;
+  margin-top: -15px; }
+
+.fa-clipboard {
+  font-size: 20px; }
 
 .bold {
   font-weight: bold; }
+
+.italic {
+  font-style: italic; }
 
 .section-hr {
   border: 1px solid yellow;
@@ -248,6 +269,30 @@ section p {
 
 .docs-constructors-list > li {
   padding: 10px; }
+
+.moreDiv {
+  text-align: center;
+  padding: 10px; }
+
+.moreButton {
+  border: none;
+  font-size: 20px;
+  outline: none;
+  padding: 10px 25px;
+  background-color: #F2BAC9;
+  border-radius: 5px; }
+
+#downloadDiv {
+  text-align: center; }
+
+#downloadButton {
+  background-color: #F2E2BA; }
+
+#mavenImageDiv {
+  overflow-x: scroll; }
+
+#mavenImage {
+  overflow: hidden; }
 
 #rbw-license p {
   font-size: 20px;
