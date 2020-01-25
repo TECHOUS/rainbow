@@ -10,6 +10,7 @@
     
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -55,9 +56,9 @@
                     <li><a href="#getting-started-hr" class="nav-links">Getting Started</a></li>
                     <li><a href="#developer-use-hr" class="nav-links">Developer Use</a></li>
                     <ul class="rbw-list sub-list">
-                        <li><a href="#" class="nav-links">Intellij Idea</a></li>
-                        <li><a href="#" class="nav-links">Eclipse</a></li>
-                        <li><a href="#" class="nav-links">VS Code</a></li>
+                        <li><a href="#developer-use-intellij" class="nav-links">Intellij Idea</a></li>
+                        <li><a href="#developer-use-eclipse" class="nav-links">Eclipse</a></li>
+                        <li><a href="#developer-use-vscode" class="nav-links">VS Code</a></li>
                     </ul>
                     <li><a href="#library-jar-usage-hr" class="nav-links">Library Jar Use</a></li>
                     <ul class="rbw-list sub-list">
@@ -266,6 +267,7 @@
         <h2>Getting Started</h2>
         <p><span class="bold">Before getting started you need to have Linux OS installed in your machine for this library to work properly.</span> The Rainbow is the java library to make good User Interfaces for Linux terminals. There are many ways through which
             can get a start use of this library. Below are the following type of uses you can start with:</p>
+        <hr class="section-hr" id="getting-started-developer-use">
         <div>
             <h3>Developer Use</h3> 
             <p>So if you are a java developer you have to install these technologies in your machine.</p>
@@ -367,6 +369,90 @@
     <hr class="section-hr" id="developer-use-hr">
     <section id="rbw-developer-use">
         <h2>Developer Use</h2>
+        <p>Before starting to use the library you have to <a href="#getting-started-developer-use">follow above three steps</a>.
+        After following the steps follow below steps according to your IDE:</p>
+        <hr class="section-hr" id="developer-use-intellij">
+        <div>
+            <h3>Intellij Idea</h3>
+            <div>
+                <h4>Using of App Class in Rainbow Package</h4>
+                <ol class="developer-use-ol">
+                    <li>For using the local package <span class="bold">Build the project</span>.</li>
+                    <li>Open the path <span class="italic">src/main/java/org.techous/rainbow</span></li>
+                    <li>You can see the below sample code is there is in App class.</li>
+                    <li>Run App class you will see the output in the console</li>
+                    <div id="intellij-output-div">
+                        <a href="images/intellij1.png" target="_blank">
+                            <img src="images/intellij1.png" alt="intellij output" id="intellijImage1">
+                        </a>
+                    </div>
+                    <li>Here you can see the documentation of the Rainbow class and try different functions or we you want to add some custom 
+                        functions in our library then you can see our next section.</li>
+                </ol>
+            </div>
+            <div>
+                <h4>Adding customization to Rainbow Library</h4>
+                <ol class="developer-use-ol">
+                    <li>Create a new class filename <span class="bold">Hello</span> in java folder.</li>
+                    <li>Copy the below code in <span class="bold">Hello.java</span> file.</li>
+                    <div class="code-snippet" id="Hello-java-div">
+                        <pre id="Hello-java">
+import org.techous.rainbow.*;
+
+public class Hello extends Rainbow {
+    
+    public String tricolor(String str, boolean end) {
+        return getRainbowString("bold", "Lb", "lwhite", str, end);
+    }
+
+    public static void main(String[] args) {
+        String str = "Hello World this is the test custom class";
+        Hello hello = new Hello();
+        System.out.println(hello.tricolor(str, false));
+    }
+}                        
+                        </pre>
+                    </div>
+                    <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
+                    <a href="images/intellij2.png" target="_blank">
+                        <img src="images/intellij2.png" alt="tricolor image"/>
+                    </a>
+                </ol>
+            </div>
+            <div>
+                <h4>Building local Artifacts and use of library jar</h4>
+                <ol class="developer-use-ol">
+                    <li>Firstly remove the META-INF folder from src/main/java directory.</li>
+                    <li>Then click on File option in the menu and then click on Project Structure.</li>
+                    <div class="artifact-div">
+                        <a href="images/artifact1.png" target="_blank">
+                            <img src="images/artifact1.png" alt="artifact1" class="artifact">
+                        </a>
+                    </div>
+                    <li>Then click on artifacts and add new jar by selecting From modules with dependencies...</li>
+                    <div class="artifact-div">
+                        <a href="images/artifact2.png" target="_blank">
+                            <img src="images/artifact2.png" alt="artifact2" class="artifact">
+                        </a>
+                    </div>
+                    <li>Select the App class as a main class file and src/main/java directory for generating manifest (META-INF folder).</li>
+                    <div class="artifact-div">
+                        <a href="images/artifact3.png" target="_blank">
+                            <img src="images/artifact3.png" alt="artifact3" class="artifact">
+                        </a>
+                    </div>
+                    <li>Now build the project.</li>
+                    <li>After building build artifact and your jar will get generated in out folder.</li>
+                    <li>Now you can use this jar file as external library in your project.</li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <h3>Eclipse</h3>
+        </div>
+        <div>
+            <h3>VS Code</h3>
+        </div>
     </section>
 
     <!-- LIBRARY JAR USAGE SECTION -->

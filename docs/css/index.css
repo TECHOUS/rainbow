@@ -294,6 +294,29 @@ section p {
 #mavenImage {
   overflow: hidden; }
 
+#intellij-output-div {
+  overflow-x: scroll; }
+
+#intellijImage1 {
+  height: 200px; }
+
+.developer-use-ol {
+  padding-left: 20px; }
+
+#Hello-java-div {
+  overflow-x: scroll; }
+
+#Hello-java {
+  padding: 10px;
+  font-family: "Fira Sans", sans-serif;
+  word-spacing: 2px; }
+
+.artifact {
+  height: 300px; }
+
+.artifact-div {
+  overflow-x: scroll; }
+
 #rbw-license p {
   font-size: 20px;
   margin: 10px;
