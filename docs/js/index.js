@@ -20,10 +20,14 @@ function navigation(){
 
 function openNavigation(){
     rainbowNavScreen.style.height = "100%";
+    const body = document.body;
+    body.style.overflowY = 'hidden';
 }
 
 function closeNavigation(){
     rainbowNavScreen.style.height = "0%";
+    const body = document.body;
+    body.style.overflowY = 'scroll';
 }
 
 const copyToClipboard1 = document.getElementById('copyToClipboard1');

@@ -135,16 +135,21 @@
   padding: 0; }
 
 #rbwNavScreen-content {
-  position: relative;
+  position: absolute;
   top: 0%;
   width: 100%;
-  color: white; }
+  height: 100%;
+  color: white;
+  overflow-x: scroll; }
 
 .rbw-list {
   list-style-type: none; }
 
 .sub-list {
   padding-left: 30px; }
+
+.left-list {
+  padding-left: 15px; }
 
 #rbw-navlist {
   padding-top: 15px;
