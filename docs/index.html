@@ -395,23 +395,28 @@
                 <ol class="developer-use-ol">
                     <li>Create a new class filename <span class="bold">Hello</span> in java folder.</li>
                     <li>Copy the below code in <span class="bold">Hello.java</span> file.</li>
-                    <div class="code-snippet" id="Hello-java-div">
-                        <pre id="Hello-java">
-import org.techous.rainbow.*;
-
-public class Hello extends Rainbow {
-    
-    public String tricolor(String str, boolean end) {
-        return getRainbowString("bold", "Lb", "lwhite", str, end);
-    }
-
-    public static void main(String[] args) {
-        String str = "Hello World this is the test custom class";
-        Hello hello = new Hello();
-        System.out.println(hello.tricolor(str, false));
-    }
-}                        
-                        </pre>
+                    <div class="code-snippet">
+                        <span id="copyToClipboard3">
+                            <i class="fas fa-clipboard"></i>
+                        </span>
+                        <div>
+                            <input type="text" value='import org.techous.rainbow.*;'' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='public class Hello extends Rainbow {' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='  public String tricolor(String str, boolean end) {' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='      return getRainbowString("bold", "Lb", "lwhite", str, end);' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='  }' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='  public static void main(String[] args) {' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='      String str = "Hello World this is the test custom class";' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='      Hello hello = new Hello();' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='      System.out.println(hello.tricolor(str, false));' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='  }' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode1" disabled>
+                            <input type="text" value='}' class="copyTextClass copyRainbowCode1" disabled>
+                        </div>
+                        <textarea id="textarea1">
+                        </textarea>
                     </div>
                     <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
                     <a href="images/intellij2.png" target="_blank">
@@ -449,9 +454,167 @@ public class Hello extends Rainbow {
         </div>
         <div>
             <h3>Eclipse</h3>
+            <div>
+                <h4>Using of App Class in Rainbow Package</h4>
+                <ol class="developer-use-ol">
+                    <li>After cloning just make a workspace in Eclipse and open the cloned project.</li>
+                    <li>After opening the project install the <span class="bold">ANSI Escape in Console</span>plugin in your Eclipse by visiting Eclipse Marketplace.</li>
+                    <li>Open the path <span class="italic">src/main/java/org.techous/rainbow</span></li>
+                    <li>You can see the below sample code is there in App class.</li>
+                    <li>Run App class you will see the output in the console.</li>
+                    <div class="artifact-div">
+                        <a href="images/eclipse1.png" target="_blank">
+                            <img src="images/eclipse1.png" alt="Eclipse output" class="eclipse">
+                        </a>
+                    </div>
+                    <li>Here you can see the documentation of the Rainbow class and try different functions or we you want to add some custom functions in our library 
+                        then you can see our next section.</li>
+                </ol>
+            </div>
+            <div>
+                <h4>Adding customization to Rainbow Library</h4>
+                <ol class="developer-use-ol">
+                    <li>Create a new class filename <span class="bold">Hello</span> in java folder.</li>
+                    <li>Copy the below code in <span class="bold">Hello.java</span> file.</li>
+                    <div class="code-snippet">
+                        <span id="copyToClipboard4">
+                            <i class="fas fa-clipboard"></i>
+                        </span>
+                        <div>
+                            <input type="text" value='import org.techous.rainbow.*;'' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='public class Hello extends Rainbow {' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='  public String tricolor(String str, boolean end) {' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='      return getRainbowString("bold", "Lb", "lwhite", str, end);' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='  }' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='  public static void main(String[] args) {' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='      String str = "Hello World this is the test custom class";' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='      Hello hello = new Hello();' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='      System.out.println(hello.tricolor(str, false));' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='  }' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode2" disabled>
+                            <input type="text" value='}' class="copyTextClass copyRainbowCode2" disabled>
+                        </div>
+                        <textarea id="textarea2">
+                        </textarea>
+                    </div>
+                    <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
+                    <div class="artifact-div">
+                        <a href="images/eclipse2.png" target="_blank">
+                            <img src="images/eclipse2.png" alt="tricolor image"/>
+                        </a>
+                    </div>
+                </ol>
+            </div>
+            <div>
+                <h4>Exporting local Library Jar</h4>
+                <ol class="developer-use-ol">
+                    <li>Right click org.techous.rainbow package and click on export.</li>
+                    <li>Then click on jar and select the jar path where you want to export.</li>
+                    <li>After finishing this process your jar will be created which you can use as project dependency jar.</li>
+                    <div class="artifact-div">
+                        <a href="images/eclipse3.png" target="_blank">
+                            <img src="images/eclipse3.png" alt="eclipse export jar" class="eclipse-export">
+                        </a>
+                    </div>
+                </ol>
+            </div>
         </div>
         <div>
             <h3>VS Code</h3>
+            <div>
+                <h4>Using of App class in VS Code</h4>
+                <ol class="developer-use-ol">
+                    <li>For using App class in VS Code you have to install java Extension pack from <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">VS Code marketplace</a>.</li>
+                    <li>Open the path <span class="italic">src/main/java/org.techous/rainbow</span></li>
+                    <li>You can see the below sample code is there is in App class.</li>
+                    <li>Click on run and App class will get executed and you will see the output in the vscode terminal.</li>
+                    <div class="artifact-div">
+                        <a href="images/vscode1.png" target="_blank">
+                            <img src="images/vscode1.png" alt="vscode output" class="eclipse">
+                        </a>
+                    </div>
+                    <li>Here you can see the documentation of the Rainbow class and try different functions or we you want to add some custom 
+                        functions in our library then you can see our next section.</li>
+                </ol>
+            </div>
+            <div>
+                <h4>Customize with VS Code</h4>
+                <ol class="developer-use-ol">
+                    <li>For doing customization in VS Code you have to install java Extension pack from <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">VS Code marketplace</a>.</li>
+                    <li>Create a new class filename <span class="bold">Hello</span> in java folder.</li>
+                    <li>Copy the below code in <span class="bold">Hello.java</span> file.</li>
+                    <div class="code-snippet">
+                        <span id="copyToClipboard5">
+                            <i class="fas fa-clipboard"></i>
+                        </span>
+                        <div>
+                            <input type="text" value='import org.techous.rainbow.*;'' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='public class Hello extends Rainbow {' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='  public String tricolor(String str, boolean end) {' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='      return getRainbowString("bold", "Lb", "lwhite", str, end);' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='  }' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='  public static void main(String[] args) {' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='      String str = "Hello World this is the test custom class";' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='      Hello hello = new Hello();' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='      System.out.println(hello.tricolor(str, false));' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='  }' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='' class="copyTextClass copyRainbowCode3" disabled>
+                            <input type="text" value='}' class="copyTextClass copyRainbowCode3" disabled>
+                        </div>
+                        <textarea id="textarea3">
+                        </textarea>
+                    </div>
+                    <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
+                    <div class="artifact-div">
+                        <a href="images/vscode2.png" target="_blank">
+                            <img src="images/vscode2.png" alt="tricolor image"/>
+                        </a>
+                    </div>
+                </ol>
+            </div>
+            <div>
+                <h4>Creating local jar with vscode</h4>
+                <ol class="developer-use-ol">
+                    <li>Create a <span class="bold">Build.bash file</span> in the root of the project</li>
+                    <li>Copy the code given below in the Build.bash file</li>
+                    <div class="code-snippet">
+                        <span id="copyToClipboard6">
+                            <i class="fas fa-clipboard"></i>
+                        </span>
+                        <div>
+                            <input type="text" value="#!bin/bash" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="# go to the java source directory" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="cd src/main/java" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="# compile the code and make a java package" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="javac -d ../../../package org/techous/rainbow/*.java" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="# go in the generated java package" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="cd ../../../package" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="# make jar from the generated java package" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="jar cf Rainbow.jar org/techous/rainbow/*.class" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="# list the classes in jar file" class="copyTextClass copyBashCode" disabled>
+                            <input type="text" value="jar -tf Rainbow.jar" class="copyTextClass copyBashCode" disabled>
+                        </div>
+                        <textarea id="textarea4">
+                        </textarea>
+                    </div>
+                    <li>Run the bash file using command <span class="bold">bash Build.bash</span></li>
+                    <li>It will generate java package and jar file which you can use in your project.</li>
+                    <div class="artifact-div">
+                        <a href="images/vscode3.png" target="_blank">
+                            <img src="images/vscode3.png" alt="rainbow jar image" class="eclipse-export">
+                        </a>
+                    </div>
+                </ol>
+            </divc>
         </div>
     </section>
 
