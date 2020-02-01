@@ -642,14 +642,139 @@
     <hr class="section-hr" id="library-jar-usage-hr">
     <section id="rbw-library-jar-usage">
         <h2>Library Jar Usage</h2>
+        <p>Before starting make sure that you have downloaded the jar. If you have not downloaded the above jar then you can download it
+            <span class="bold"><a href="#">here</a></span>.</p>
         <div>
             <h3>Intellij Idea</h3>
+            <ol class="developer-use-ol">
+                <li>Create a java project with project name <span class="bold">INTELLIJ</span> but you can use any other name.</li>
+                <li>Your project structure will be like this:</li>
+                <div class="artifact-div">
+                    <a href="images/intellij3.png" target="_blank">
+                        <img src="images/intellij3.png" alt="project structure">
+                    </a>
+                </div>
+                <li>After creation of project you have to add the downloaded jar in External Libraries in intellij.</li>
+                <li>For adding the jar as a dependency click on <span class="bold">file and then project structure</span>. After opening click on libraries and add the downloaded jar.</li>
+                <div class="artifact-div">
+                    <a href="images/intellij4.png" target="_blank">
+                        <img src="images/intellij4.png" alt="adding library jar" class="artifact">
+                    </a>
+                </div>
+                <li>After adding you have to create a class name Main in the src folder.</li>
+                <li>Copy the code given below in that class file.</li>
+                <div class="code-snippet">
+                    <span id="copyToClipboard7">
+                        <i class="fas fa-clipboard"></i>
+                    </span>
+                    <div>
+                        <input type="text" value="import org.techous.rainbow.*;" class="copyTextClass copyMainCode" disabled>
+                        <input type="text" value="public class Main {" class="copyTextClass copyMainCode" disabled>
+                        <input type="text" value="  public static void main(String[] args) {" class="copyTextClass copyMainCode" disabled>
+                        <input type="text" value="      Rainbow rain = new Rainbow();" class="copyTextClass copyMainCode" disabled>
+                        <input type="text" value='      System.out.println(rain.getBGString("lwhite","Hello World",true));' class="copyTextClass copyMainCode" disabled>
+                        <input type="text" value="  }" class="copyTextClass copyMainCode" disabled>
+                        <input type="text" value="}" class="copyTextClass copyMainCode" disabled>
+                    </div>
+                    <textarea id="textarea5">
+                    </textarea>
+                </div>
+                <li>Run this class file and you will get the output on Run screen of Intellij.</li>
+                <div class="artifact-div">
+                    <a href="images/intellij5.png" target="_blank">
+                        <img src="images/intellij5.png" alt="output of the code">
+                    </a>
+                </div>
+                <li>In this way you can add this Library Jar to your project.</li>
+            </ol>
         </div>
         <div>
             <h3>Eclipse</h3>
+            <ol class="developer-use-ol">
+                <li>Open eclipse and select any workspace if not present create one wtih name ECW.</li>
+                <li>Create a java project with project name <span class="bold">eclipse</span> in the workspace which you have selected.</li>
+                <li>After creating your project your project will look like this:</li>
+                <div class="artifact-div">
+                    <a href="images/eclipse4.png" target="_blank">
+                        <img src="images/eclipse4.png" alt="sample project">
+                    </a>
+                </div>
+                <li>Add the library jar in classpath of the eclipse project.</li>
+                <div class="artifact-div">
+                    <a href="images/eclipse5.png" target="_blank">
+                        <img src="images/eclipse5.png" alt="add jar to classpath" class="artifact">
+                    </a>
+                </div>
+                <li>After adding the library jar its time to add some code for using library jar.</li>
+                <li>Create a new class Main in src folder and copy the below code in your java file.</li>
+                <div class="code-snippet">
+                    <span id="copyToClipboard8">
+                        <i class="fas fa-clipboard"></i>
+                    </span>
+                    <div>
+                        <input type="text" value="import org.techous.rainbow.*;" class="copyTextClass copyMainCodeEclipse" disabled>
+                        <input type="text" value="public class Main {" class="copyTextClass copyMainCodeEclipse" disabled>
+                        <input type="text" value="  public static void main(String[] args) {" class="copyTextClass copyMainCodeEclipse" disabled>
+                        <input type="text" value="      Rainbow rain = new Rainbow();" class="copyTextClass copyMainCodeEclipse" disabled>
+                        <input type="text" value='      System.out.println(rain.getBGString("lwhite","Hello World",true));' class="copyTextClass copyMainCodeEclipse" disabled>
+                        <input type="text" value="  }" class="copyTextClass copyMainCodeEclipse" disabled>
+                        <input type="text" value="}" class="copyTextClass copyMainCodeEclipse" disabled>
+                    </div>
+                    <textarea id="textarea6">
+                    </textarea>
+                </div>
+            </ol>
         </div>
         <div>
             <h3>VS Code</h3>
+            <ol class="developer-use-ol">
+                <li>
+                    Then create a folder with name <span class="bold">VSCODE</span>, but you take any name of the folder.
+                </li>
+                <li>Open the folder in vscode.</li>
+                <li>Create a <span class="bold">lib</span> and <span class="bold">src</span> folder in your root folder.</li>
+                <li>After creating the project copy the rainbow jar in the <span class="bold">lib</span> folder.</li>
+                <li>Then create a java class with name Main.java but you can take any other name but make sure you have changed the class name Main to your name according to java.</li>
+                <div class="code-snippet">
+                    <span id="copyToClipboard9">
+                        <i class="fas fa-clipboard"></i>
+                    </span>
+                    <div>
+                        <input type="text" value="import org.techous.rainbow.*;" class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value="" class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value="public class Main{" class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value="  public static void main(String[] args) {" class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value="      Rainbow rain = new Rainbow();" class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value='      System.out.println(rain.get("lred")+"Hello World");' class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value="  }" class="copyTextClass copyVSCode" disabled>
+                        <input type="text" value="}" class="copyTextClass copyVSCode" disabled>
+                    </div>
+                    <textarea id="textarea7">
+                    </textarea>
+                </div>
+                <li>Open the integrated terminal in VSCode and go in src folder.</li>
+                <li>Follow the below commands one by one in the terminal and you will get your output in the terminal.</li>
+                <div class="code-snippet">
+                    <span id="copyToClipboard10">
+                        <i class="fas fa-clipboard"></i>
+                    </span>
+                    <div>
+                        <input type="text" value="# compile the java class with the jar" class="copyTextClass copyVSCodeBash" disabled>
+                        <input type="text" value="javac -cp ../lib/rainbow.jar Main.java" class="copyTextClass copyVSCodeBash" disabled>
+                        <input type="text" value="" class="copyTextClass copyVSCodeBash" disabled>
+                        <input type="text" value="# run the java class" class="copyTextClass copyVSCodeBash" disabled>
+                        <input type="text" value="java -cp .:../lib/rainbow.jar Main" class="copyTextClass copyVSCodeBash" disabled>
+                    </div>
+                    <textarea id="textarea8">
+                    </textarea>
+                </div>
+                <li>Your output will be like this:</li>
+                <div class="artifact-div">
+                    <a href="">
+                        <img src="images/vscode4.png" alt="output">
+                    </a>
+                </div>
+            </ol>
         </div>
     </section> 
 

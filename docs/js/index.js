@@ -115,3 +115,67 @@ copyToClipboard6.addEventListener('click',()=>{
     textarea4.setSelectionRange(0, 99999);
     document.execCommand("copy");
 })
+
+const copyToClipboard7 = document.getElementById('copyToClipboard7');
+copyToClipboard7.addEventListener('click',()=>{
+    const copyMainCode = document.getElementsByClassName('copyMainCode');
+    let result = '';
+    for(let i=0;i<copyMainCode.length ;i++){
+        copyMainCode[i].disabled = false;
+        result = result + copyMainCode[i].value + '\n';
+        copyMainCode[i].disabled = true;
+    }
+    const textarea5 = document.getElementById('textarea5');
+    textarea5.value = result;
+    textarea5.select();
+    textarea5.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+})
+
+const copyToClipboard8 = document.getElementById('copyToClipboard8');
+copyToClipboard8.addEventListener('click',()=>{
+    const copyMainCodeEclipse = document.getElementsByClassName('copyMainCodeEclipse');
+    let result = '';
+    for(let i=0;i<copyMainCodeEclipse.length ;i++){
+        copyMainCodeEclipse[i].disabled = false;
+        result = result + copyMainCodeEclipse[i].value + '\n';
+        copyMainCodeEclipse[i].disabled = true;
+    }
+    const textarea6 = document.getElementById('textarea6');
+    textarea6.value = result;
+    textarea6.select();
+    textarea6.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+})
+
+const copyToClipboard9 = document.getElementById('copyToClipboard9');
+copyToClipboard9.addEventListener('click',()=>{
+    const copyVSCode = document.getElementsByClassName('copyVSCode');
+    let result = '';
+    for(let i=0;i<copyVSCode.length ;i++){
+        copyVSCode[i].disabled = false;
+        result = result + copyVSCode[i].value + '\n';
+        copyVSCode[i].disabled = true;
+    }
+    const textarea7 = document.getElementById('textarea7');
+    textarea7.value = result;
+    textarea7.select();
+    textarea7.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+})
+
+const copyToClipboard10 = document.getElementById('copyToClipboard10');
+copyToClipboard10.addEventListener('click',()=>{
+    const copyVSCodeBash = document.getElementsByClassName('copyVSCodeBash');
+    let result = '';
+    for(let i=0;i<copyVSCodeBash.length ;i++){
+        copyVSCodeBash[i].disabled = false;
+        result = result + copyVSCodeBash[i].value + '\n';
+        copyVSCodeBash[i].disabled = true;
+    }
+    const textarea8 = document.getElementById('textarea8');
+    textarea8.value = result;
+    textarea8.select();
+    textarea8.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+})

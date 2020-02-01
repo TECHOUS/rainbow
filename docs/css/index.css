@@ -25,7 +25,11 @@
 #copyToClipboard3,
 #copyToClipboard4,
 #copyToClipboard5,
-#copyToClipboard6 {
+#copyToClipboard6,
+#copyToClipboard7,
+#copyToClipboard8,
+#copyToClipboard9,
+#copyToClipboard10 {
   float: right;
   margin-top: -8px; }
 
@@ -338,7 +342,11 @@ section p {
 #textarea1,
 #textarea2,
 #textarea3,
-#textarea4 {
+#textarea4,
+#textarea5,
+#textarea6,
+#textarea7,
+#textarea8 {
   opacity: 0;
   height: 0;
   width: 0; }
@@ -346,7 +354,11 @@ section p {
 .copyRainbowCode1,
 .copyRainbowCode2,
 .copyRainbowCode3,
-.copyBashCode {
+.copyBashCode,
+.copyMainCode,
+.copyMainCodeEclipse,
+.copyVSCode,
+.copyTextCode {
   font-family: "Fira Sans", sans-serif;
   word-spacing: 2px; }
 
