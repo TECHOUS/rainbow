@@ -362,6 +362,14 @@ section p {
   font-family: "Fira Sans", sans-serif;
   word-spacing: 2px; }
 
+#rbw-contribution {
+  min-height: 50vh; }
+
+.contributor-profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px; }
+
 #rbw-license p {
   font-size: 20px;
   margin: 10px;
