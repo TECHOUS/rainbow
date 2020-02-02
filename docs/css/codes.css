@@ -6,10 +6,41 @@
 
 .code-snippet {
   background-color: #BAF2D8;
-  padding: 10px; }
+  padding: 20px;
+  margin: 5px; }
+
+.copyTextClass {
+  border: none;
+  width: 100%;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  color: black; }
+
+#copyToClipboard1,
+#copyToClipboard2 {
+  position: absolute;
+  margin-top: -15px; }
+
+#copyToClipboard3,
+#copyToClipboard4,
+#copyToClipboard5,
+#copyToClipboard6,
+#copyToClipboard7,
+#copyToClipboard8,
+#copyToClipboard9,
+#copyToClipboard10 {
+  float: right;
+  margin-top: -8px; }
+
+.fa-clipboard {
+  font-size: 20px; }
 
 .bold {
   font-weight: bold; }
+
+.italic {
+  font-style: italic; }
 
 .section-hr {
   border: 1px solid yellow;
