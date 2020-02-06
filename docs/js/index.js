@@ -2,7 +2,29 @@ let rainbowLogo = document.getElementById('rbw-logo');
 let rainbowNavScreen = document.getElementById("rbwNavScreen");
 let screenFlag = false;
 let rainbowNavList = document.getElementById('rbw-navlist');
+let searchArray = [];
 
+let init =()=>{
+    console.log("init");
+    searchArray.push("Description");
+    searchArray.push("Rainbow Java Package");
+    searchArray.push("Class Codes");
+    searchArray.push("Interface Procedures");
+    searchArray.push("Class Rainbow");
+    searchArray.push("Getting Started");
+    searchArray.push("Getting Started-Developer Use");
+
+    function extractContent(s) {
+        var span = document.createElement('span');
+        span.innerHTML = s;
+        return span.textContent || span.innerText;
+    };
+    console.log(extractContent(html));
+
+    console.log(searchArray);
+}
+
+init()
 rainbowLogo.addEventListener("click", navigation);
 rainbowNavList.addEventListener('click', navigation);
 

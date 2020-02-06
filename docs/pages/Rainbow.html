@@ -9,16 +9,19 @@
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <link rel="icon" href="../images/logos/logo.png"/>
+
+    <script src="../js/rainbow.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
     <header id="header">
         <div class="header-buttons">
-            <a href="#rbw-description"><i class="fas fa-rainbow fa-2x"></i></a>
+            <a href="../index.html"><i class="fas fa-rainbow fa-2x"></i></a>
             <span id="header-buttons-rainbow"><a href="#rbw-description">Rainbow</a></span>
         </div>
         <div class="header-buttons">
@@ -34,11 +37,353 @@
             <a href="https://github.com/TechOUs/rainbow" id="header-buttons-github">GitHub</a>            
         </div>
     </header>
+
+    <!-- INDEX MENU -->
+    <div>
+        <img src="../images/logos/logo.png" id="rbw-logo"/>
+        <div id="navScreen">
+            <a href="javascript:void(0)" onclick="navigation()" id="closebtn">&times;</a>
+            <div id="navScreenContent">
+                <h2 id="navScreenContent-h2">Index</h2>
+                <hr class="navLine">
+                <ul id="navlist">
+                    <li><a href="#constructor" class="navLinks">Rainbow</a></li>
+                    <hr class="navLine">
+                    <li><a href="#get" class="navLinks">get</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getFormat" class="navLinks">getFormat</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getColor" class="navLinks">getColor</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getBG" class="navLinks">getBG</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getFormatColor" class="navLinks">getFormatColor</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getFormatBG" class="navLinks">getFormatBG</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getColorBG" class="navLinks">getColorBG</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getRainbow" class="navLinks">getRainbow</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getFormatString" class="navLinks">getFormatString</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getColorString" class="navLinks">getColorString</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getBGString" class="navLinks">getBGString</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getFormatColorString" class="navLinks">getFormatColorString</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getFormatBGString" class="navLinks">getFormatBGString</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getColorBGString" class="navLinks">getColorBGString</a></li>
+                    <hr class="navLine">
+                    <li><a href="#getRainbowString" class="navLinks">getRainbowString</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+
+    <!-- RAINBOW SECTION -->
+    <section id="rainbow-section">
+        <h2 class="heading">
+            <i class="fas fa-copyright"></i>&nbsp;
+            Class Rainbow
+        </h2>
+
+        <div class="docs-description">
+            <p>This class contains all the methods implementations docs.</p>
+            <h4>Since</h4>
+            <p>1.0</p>
+        </div>
+        <hr class="docs-hr">
+        <div class="docs-description">
+            <span class="bold">Package</span> org.techous.rainbow<br/>
+            class &nbsp;<span class="bold">Rainbow</span><br/>
+            extends &nbsp;java.lang.Object<br/>
+            implements <a href="../pages/Procedures.html">Procedures</a>
+        </div>
+        <div>
+            <h3 class="heading">Constructors</h3>
+            <!-- Rainbow() -->
+            <hr class="section-hr" id="constructor">
+            <div class="field">
+                <h3 class="sub-heading">Rainbow ( )</h3>
+                <p class="code-heading">public Rainbow( )</p>
+                <p class="field-description">This function will create a colors mapping you need for getting different colors.</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="heading">Methods</h3>
+
+            <!-- get -->
+            <hr class="section-hr" id="get">
+            <div class="field">
+                <h3 class="sub-heading">get( value )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">get</span>( java.lang.String value )</p>
+                <p class="field-description">this function will return the all the rainbow combinations</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">value</span> parameter you can see available <a href="">FORMATS</a>, <a href="">COLORS</a> and <a href="">BACKGROUNDS</a></p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>Rainbowed codes</p>
+                </div>
+            </div>
+
+            <!-- getFormat -->
+            <hr class="section-hr" id="getFormat">
+            <div class="field">
+                <h3 class="sub-heading">getFormat( format )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getFormat</span>( java.lang.String format )</p>
+                <p class="field-description">Returns the format code you need to change the string format</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">format</span> parameter you can see available <a href="">FORMATS</a>.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>formatted code</p>
+                </div>
+            </div>
+
+            <!-- getColor -->
+            <hr class="section-hr" id="getColor">
+            <div class="field">
+                <h3 class="sub-heading">getColor( color )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getColor</span>( java.lang.String color )</p>
+                <p class="field-description">Returns the color code for changing text to colored text</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">color</span> parameter you can see available <a href="">COLORS</a>.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>color codes</p>
+                </div>
+            </div>
+
+            <!-- getBG -->
+            <hr class="section-hr" id="getBG">
+            <div class="field">
+                <h3 class="sub-heading">getBG( background )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getBG</span>( java.lang.String background )</p>
+                <p class="field-description">Returns the colored background code for coloring backgrounds</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">background</span> --> you can see available <a href="">BACKGROUND</a> docs.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>background color codes</p>
+                </div>
+            </div>
+
+            <!-- getFormatColor -->
+            <hr class="section-hr" id="getFormatColor">
+            <div class="field">
+                <h3 class="sub-heading">getFormatColor( format, color )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getFormatColor</span>( java.lang.String format, java.lang.string color )</p>
+                <p class="field-description">this function will return the formatted color code</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">format</span> and <span class="bold">color</span> parameters you can see available <a href="">FORMATS</a> and <a href="">COLORS</a>.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>formatted color code</p>
+                </div>
+            </div>
+
+            <!-- getFormatBG -->
+            <hr class="section-hr" id="getFormatBG">
+            <div class="field">
+                <h3 class="sub-heading">getFormatBG( format, background )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getFormatBG</span>( java.lang.String format, java.lang.string background )</p>
+                <p class="field-description">this function will return formatted background code</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">format</span> and <span class="bold">background</span> parameters you can see available <a href="">FORMATS</a> and <a href="">BACKGROUNDS</a>.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>formatted background code</p>
+                </div>
+            </div>
+
+            <!-- getColorBG -->
+            <hr class="section-hr" id="getColorBG">
+            <div class="field">
+                <h3 class="sub-heading">getColorBG( color, background )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getColorBG</span>( java.lang.String color, java.lang.string background )</p>
+                <p class="field-description">this function will return colored background code</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">color</span> and <span class="bold">background</span> parameters you can see available <a href="">COLORS</a> and <a href="">BACKGROUNDS</a>.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>colored bacground code</p>
+                </div>
+            </div>
+
+            <!-- getRainbow -->
+            <hr class="section-hr" id="getRainbow">
+            <div class="field">
+                <h3 class="sub-heading">getRainbow( format, color, background )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getRainbow</span>( java.lang.String format, java.lang.String color, java.lang.string background )</p>
+                <p class="field-description">this function will return rainbowed code</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p>For <span class="bold">format</span>, <span class="bold">color</span> and <span class="bold">background</span> parameters you can see available <a href="">FORMATS</a>, <a href="">COLORS</a> and <a href="">BACKGROUNDS</a>.</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>rainbowed code</p>
+                </div>
+            </div>
+
+            <!-- getFormatString -->
+            <hr class="section-hr" id="getFormatString">
+            <div class="field">
+                <h3 class="sub-heading">getFormatString( format, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getFormatString</span>( java.lang.String format, java.lang.String str, boolean end )</p>
+                <p class="field-description">This function will generate the formatted string according to the format passed</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">format</span> --> you can see available <a href="">FORMAT</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be formatted</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>formatted string</p>
+                </div>
+            </div>
+
+            <!-- getColorString -->
+            <hr class="section-hr" id="getColorString">
+            <div class="field">
+                <h3 class="sub-heading">getColorString( color, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getColorString</span>( java.lang.String color, java.lang.String str, boolean end )</p>
+                <p class="field-description">This function will generate the colored string according to the color passed</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">color</span> --> you can see available <a href="">COLOR</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be formatted</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>color codes</p>
+                </div>
+            </div>
+
+            <!-- getBGString -->
+            <hr class="section-hr" id="getBGString">
+            <div class="field">
+                <h3 class="sub-heading">getBGString( background, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getBGString</span>( java.lang.String background, java.lang.String str, boolean end )</p>
+                <p class="field-description">This function will generate the filled background string according to the background passed</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">background</span> --> you can see available <a href="">BACKGROUND</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be colored</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>filled background string</p>
+                </div>
+            </div>
+
+            <!-- getFormatColorString -->
+            <hr class="section-hr" id="getFormatColorString">
+            <div class="field">
+                <h3 class="sub-heading">getFormatColorString( format, color, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getFormatColorString</span>( java.lang.String format, java.lang.String color, java.lang.String str, boolean end )</p>
+                <p class="field-description">this function will return the formatted colored string</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">format</span> --> you can see available <a href="">FORMAT</a> docs.</p>
+                    <p><span class="bold">color</span> --> you can see available <a href="">COLOR</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be colored</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>formatted color string</p>
+                </div>
+            </div>
+
+            <!-- getFormatBGString -->
+            <hr class="section-hr" id="getFormatBGString">
+            <div class="field">
+                <h3 class="sub-heading">getFormatBGString( format, background, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getFormatBGString</span>( java.lang.String format, java.lang.String background, java.lang.String str, boolean end )</p>
+                <p class="field-description">this function will return formatted background string</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">format</span> --> you can see available <a href="">FORMAT</a> docs.</p>
+                    <p><span class="bold">background</span> --> you can see available <a href="">BACKGROUND</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be colored</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>formatted background string</p>
+                </div>
+            </div>
+
+            <!-- getColorBGString -->
+            <hr class="section-hr" id="getColorBGString">
+            <div class="field">
+                <h3 class="sub-heading">getColorBGString( color, background, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getColorBGString</span>( java.lang.String color, java.lang.string background, java.lang.String str, boolean end )</p>
+                <p class="field-description">this function will return colored background string</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">color</span> --> you can see available <a href="">COLOR</a> docs.</p>
+                    <p><span class="bold">background</span> --> you can see available <a href="">BACKGROUND</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be colored</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>colored bacground string</p>
+                </div>
+            </div>
+
+            <!-- getRainbowString -->
+            <hr class="section-hr" id="getRainbowString">
+            <div class="field">
+                <h3 class="sub-heading">getRainbowString( format, color, background, str, end )</h3>
+                <p class="code-heading">public java.lang.String <span class="bold">getRainbowString</span>( java.lang.String format, java.lang.String color, java.lang.string background, java.lang.String str, boolean end )</p>
+                <p class="field-description">this function will return rainbowed string</p>
+                <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <p><span class="bold">format</span> --> you can see available <a href="">FORMAT</a> docs.</p>
+                    <p><span class="bold">color</span> --> you can see available <a href="">COLOR</a> docs.</p>
+                    <p><span class="bold">background</span> --> you can see available <a href="">BACKGROUND</a> docs.</p>
+                    <p><span class="bold">str</span> --> is the string to be colored</p>
+                    <p><span class="bold">end</span> --> is whether to end the color coding or not</p>
+                </div>
+                <div class="returns">
+                    <h4>Returns:</h4>
+                    <p>rainbowed string</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- FOOTER SECTION -->
     <footer>
         <div id="footer-poweredby">
             <span id="footer-poweredby-span">Powered By</span>
-            <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+            <a href="https://techous.github.io/">
+                <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+            </a>
         </div>
         <div>
             Copyright &copy; TechOUs 2020
