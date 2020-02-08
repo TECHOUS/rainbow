@@ -15,6 +15,7 @@
 
     <link rel="icon" href="../images/logos/logo.png"/>
     <script src="../js/codes.js" defer></script>
+    <script src="../js/search.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -27,6 +28,9 @@
             <div id="header-buttons-search-div">
                 <i class="fas fa-search"></i>
                 <input id="header-buttons-search" type="text" placeholder="search">
+                <i class="fas fa-times" id="searchCross"></i>
+                <div id="searchResults">
+                </div>
             </div>
         </div>
         <div class="header-buttons">
@@ -46,87 +50,87 @@
                 <h2 id="navScreenContent-h2">Index</h2>
                 <hr class="navLine">
                 <ul id="navlist">
-                    <li><a href="#reset" class="navLinks">RESET</a></li>
+                    <li><a href="#reset-hr" class="navLinks">RESET</a></li>
                     <hr class="navLine">
-                    <li><a href="#bold" class="navLinks">BOLD</a></li>
+                    <li><a href="#bold-hr" class="navLinks">BOLD</a></li>
                     <hr class="navLine">
-                    <li><a href="#italic" class="navLinks">ITALIC</a></li>
+                    <li><a href="#italic-hr" class="navLinks">ITALIC</a></li>
                     <hr class="navLine">
-                    <li><a href="#underline" class="navLinks">UNDERLINE</a></li>
+                    <li><a href="#underline-hr" class="navLinks">UNDERLINE</a></li>
                     <hr class="navLine">
-                    <li><a href="#blink" class="navLinks">BLINK</a></li>
+                    <li><a href="#blink-hr" class="navLinks">BLINK</a></li>
                     <hr class="navLine">
-                    <li><a href="#hidden" class="navLinks">HIDDEN</a></li>
+                    <li><a href="#hidden-hr" class="navLinks">HIDDEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#cut" class="navLinks">CUT</a></li>
+                    <li><a href="#cut-hr" class="navLinks">CUT</a></li>
                     <hr class="navLine">
-                    <li><a href="#doubleline" class="navLinks">DOUBLELINE</a></li>
+                    <li><a href="#doubleline-hr" class="navLinks">DOUBLELINE</a></li>
                     <hr class="navLine">
-                    <li><a href="#overline" class="navLinks">OVERLINE</a></li>
+                    <li><a href="#overline-hr" class="navLinks">OVERLINE</a></li>
                     <hr class="navLine">
-                    <li><a href="#default" class="navLinks">DEFAULT</a></li>
+                    <li><a href="#default-hr" class="navLinks">DEFAULT</a></li>
                     <hr class="navLine">
-                    <li><a href="#lgreen" class="navLinks">LGREEN</a></li>
+                    <li><a href="#lgreen-hr" class="navLinks">LGREEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#mgreen" class="navLinks">MGREEN</a></li>
+                    <li><a href="#mgreen-hr" class="navLinks">MGREEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#dgreen" class="navLinks">DGREEN</a></li>
+                    <li><a href="#dgreen-hr" class="navLinks">DGREEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#lred" class="navLinks">LRED</a></li>
+                    <li><a href="#lred-hr" class="navLinks">LRED</a></li>
                     <hr class="navLine">
-                    <li><a href="#dred" class="navLinks">DRED</a></li>
+                    <li><a href="#dred-hr" class="navLinks">DRED</a></li>
                     <hr class="navLine">
-                    <li><a href="#lwhite" class="navLinks">LWHITE</a></li>
+                    <li><a href="#lwhite-hr" class="navLinks">LWHITE</a></li>
                     <hr class="navLine">
-                    <li><a href="#dwhite" class="navLinks">DWHITE</a></li>
+                    <li><a href="#dwhite-hr" class="navLinks">DWHITE</a></li>
                     <hr class="navLine">
-                    <li><a href="#lblue" class="navLinks">LBLUE</a></li>
+                    <li><a href="#lblue-hr" class="navLinks">LBLUE</a></li>
                     <hr class="navLine">
-                    <li><a href="#dblue" class="navLinks">DBLUE</a></li>
+                    <li><a href="#dblue-hr" class="navLinks">DBLUE</a></li>
                     <hr class="navLine">
-                    <li><a href="#lcyan" class="navLinks">LCYAN</a></li>
+                    <li><a href="#lcyan-hr" class="navLinks">LCYAN</a></li>
                     <hr class="navLine">
-                    <li><a href="#dcyan" class="navLinks">DCYAN</a></li>
+                    <li><a href="#dcyan-hr" class="navLinks">DCYAN</a></li>
                     <hr class="navLine">
-                    <li><a href="#orange" class="navLinks">ORANGE</a></li>
+                    <li><a href="#orange-hr" class="navLinks">ORANGE</a></li>
                     <hr class="navLine">
-                    <li><a href="#black" class="navLinks">BLACK</a></li>
+                    <li><a href="#black-hr" class="navLinks">BLACK</a></li>
                     <hr class="navLine">
-                    <li><a href="#magenta" class="navLinks">MAGENTA</a></li>
+                    <li><a href="#magenta-hr" class="navLinks">MAGENTA</a></li>
                     <hr class="navLine">
-                    <li><a href="#yellow" class="navLinks">YELLOW</a></li>
+                    <li><a href="#yellow-hr" class="navLinks">YELLOW</a></li>
                     <hr class="navLine">
-                    <li><a href="#lemon" class="navLinks">LEMON</a></li>
+                    <li><a href="#lemon-hr" class="navLinks">LEMON</a></li>
                     <hr class="navLine">
-                    <li><a href="#pink" class="navLinks">PINK</a></li>
+                    <li><a href="#pink-hr" class="navLinks">PINK</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgdgreen" class="navLinks">BGDGREEN</a></li>
+                    <li><a href="#bgdgreen-hr" class="navLinks">BGDGREEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglgreen" class="navLinks">BGLGREEN</a></li>
+                    <li><a href="#bglgreen-hr" class="navLinks">BGLGREEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgmgreen" class="navLinks">BGMGREEN</a></li>
+                    <li><a href="#bgmgreen-hr" class="navLinks">BGMGREEN</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgdred" class="navLinks">BGDRED</a></li>
+                    <li><a href="#bgdred-hr" class="navLinks">BGDRED</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglred" class="navLinks">BGLRED</a></li>
+                    <li><a href="#bglred-hr" class="navLinks">BGLRED</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgdorange" class="navLinks">BGDORANGE</a></li>
+                    <li><a href="#bgdorange-hr" class="navLinks">BGDORANGE</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglorange" class="navLinks">BGLORANGE</a></li>
+                    <li><a href="#bglorange-hr" class="navLinks">BGLORANGE</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglblue" class="navLinks">BGLBLUE</a></li>
+                    <li><a href="#bglblue-hr" class="navLinks">BGLBLUE</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglwhite" class="navLinks">BGLWHITE</a></li>
+                    <li><a href="#bglwhite-hr" class="navLinks">BGLWHITE</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgdwhite" class="navLinks">BGDWHITE</a></li>
+                    <li><a href="#bgdwhite-hr" class="navLinks">BGDWHITE</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglemon" class="navLinks">BGLEMON</a></li>
+                    <li><a href="#bglemon-hr" class="navLinks">BGLEMON</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgmpink" class="navLinks">BGMPINK</a></li>
+                    <li><a href="#bgmpink-hr" class="navLinks">BGMPINK</a></li>
                     <hr class="navLine">
-                    <li><a href="#bgdpink" class="navLinks">BGDPINK</a></li>
+                    <li><a href="#bgdpink-hr" class="navLinks">BGDPINK</a></li>
                     <hr class="navLine">
-                    <li><a href="#bglpink" class="navLinks">BGLPINK</a></li>
+                    <li><a href="#bglpink-hr" class="navLinks">BGLPINK</a></li>
                 </ul>
             </div> 
         </div>
@@ -134,10 +138,10 @@
 
     <!-- DOCUMENTATION SECTION -->
     <section id="documentation-section">
-        <h2 class="heading">
+        <h1 class="heading">
             <i class="fas fa-copyright"></i>&nbsp;
             Class Codes
-        </h2>
+        </h1>
 
         <div class="docs-description">
             <p>This class contains all the color codes used for rainbow class.</p>
@@ -151,304 +155,486 @@
             extends &nbsp;java.lang.Object
         </div>
         <div>
-            <h3 class="heading">Field Details</h3>
+            <h2 class="heading">Field Details</h2>
+            <p class="italic bold" id="field-details-p">These are all the constants used in the java library which you cannot use while calling any function. 
+                For every field, codes are given with pics which you can use only while calling rainbow functions.</p>
             
-            <!-- RESET -->
-            <hr class="section-hr" id="reset">
-            <div class="field">
-                <h3 class="sub-heading">RESET</h3>
-                <p class="code-heading">public static final String RESET</p>
-                <p class="field-description">Used for color reset.</p>
+            <!-- FORMATS -->
+            <div>
+                <h3 class="heading">Formats</h3>
+                <!-- RESET -->
+                <hr class="section-hr" id="reset-hr">
+                <div class="field">
+                    <h3 class="sub-heading">RESET</h3>
+                    <p class="code-heading">public static final String RESET</p>
+                    <p class="field-description">Used for color reset.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/reset.png" alt="reset" class="field-img">
+                        <h4>reset</h4>
+                    </div>
+                </div>
+                <!-- BOLD -->
+                <hr class="section-hr" id="bold-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BOLD</h3>
+                    <p class="code-heading">public static final String BOLD</p>
+                    <p class="field-description">Used for bold text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bold.png" alt="bold" class="field-img">
+                        <h4>bold</h4>
+                    </div>
+                </div>
+                <!-- ITALIC -->
+                <hr class="section-hr" id="italic-hr">
+                <div class="field">
+                    <h3 class="sub-heading">ITALIC</h3>
+                    <p class="code-heading">public static final String ITALIC</p>
+                    <p class="field-description">Used for italic text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/italic.png" alt="italic" class="field-img">
+                        <h4>italic</h4>
+                    </div>
+                </div>
+                <!-- UNDERLINE -->
+                <hr class="section-hr" id="underline-hr">
+                <div class="field">
+                    <h3 class="sub-heading">UNDERLINE</h3>
+                    <p class="code-heading">public static final String UNDERLINE</p>
+                    <p class="field-description">Used for underline text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/underline.png" alt="underline" class="field-img">
+                        <h4>underline</h4>
+                    </div>
+                </div>
+                <!-- BLINK -->
+                <hr class="section-hr" id="blink-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BLINK</h3>
+                    <p class="code-heading">public static final String BLINK</p>
+                    <p class="field-description">Used for blinking text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/record.gif" alt="blink" class="field-img">
+                        <h4>blink</h4>
+                    </div>
+                </div>
+                <!-- HIDDEN -->
+                <hr class="section-hr" id="hidden-hr">
+                <div class="field">
+                    <h3 class="sub-heading">HIDDEN</h3>
+                    <p class="code-heading">public static final String HIDDEN</p>
+                    <p class="field-description">Used for hidden text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/hidden.png" alt="hidden" class="field-img">
+                        <h4>hidden</h4>
+                    </div>
+                </div>
+                <!-- CUT -->
+                <hr class="section-hr" id="cut-hr">
+                <div class="field">
+                    <h3 class="sub-heading">CUT</h3>
+                    <p class="code-heading">public static final String CUT</p>
+                    <p class="field-description">Used for strikethrough text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/cut.png" alt="cut" class="field-img">
+                        <h4>cut</h4>
+                    </div>
+                </div>
+                <!-- DOUBLE LINE -->
+                <hr class="section-hr" id="doubleline-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DOUBLELINE</h3>
+                    <p class="code-heading">public static final String DOUBLELINE</p>
+                    <p class="field-description">Used for double line text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/doubleline.png" alt="doubleline" class="field-img">
+                        <h4>doubleline</h4>
+                    </div>
+                </div>
+                <!-- OVERLINE -->
+                <hr class="section-hr" id="overline-hr">
+                <div class="field">
+                    <h3 class="sub-heading">OVERLINE</h3>
+                    <p class="code-heading">public static final String OVERLINE</p>
+                    <p class="field-description">Used for over line text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/overline.png" alt="overline" class="field-img">
+                        <h4>overline</h4>
+                    </div>
+                </div>
             </div>
-            <!-- BOLD -->
-            <hr class="section-hr" id="bold">
-            <div class="field">
-                <h3 class="sub-heading">BOLD</h3>
-                <p class="code-heading">public static final String BOLD</p>
-                <p class="field-description">Used for bold text.</p>
+            
+            <!-- COLORS -->
+            <div>
+                <h3 class="heading">Colors</h3>
+                <!-- DEFAULT -->
+                <hr class="section-hr" id="default-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DEFAULT</h3>
+                    <p class="code-heading">public static final String DEFAULT</p>
+                    <p class="field-description">Used for default text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/default.png" alt="default" class="field-img">
+                        <h4>D</h4>
+                    </div>
+                </div>
+                <!-- LGREEN -->
+                <hr class="section-hr" id="lgreen-hr">
+                <div class="field">
+                    <h3 class="sub-heading">LGREEN</h3>
+                    <p class="code-heading">public static final String LGREEN</p>
+                    <p class="field-description">Used for light green text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/lgreen.png" alt="lgreen" class="field-img">
+                        <h4>Lg</h4>
+                    </div>
+                </div>
+                <!-- MGREEN -->
+                <hr class="section-hr" id="mgreen-hr">
+                <div class="field">
+                    <h3 class="sub-heading">MGREEN</h3>
+                    <p class="code-heading">public static final String MGREEN</p>
+                    <p class="field-description">Used for medium green text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/mgreen.png" alt="mgreen" class="field-img">
+                        <h4>Mg</h4>
+                    </div>
+                </div>
+                <!-- DGREEN -->
+                <hr class="section-hr" id="dgreen-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DGREEN</h3>
+                    <p class="code-heading">public static final String DGREEN</p>
+                    <p class="field-description">Used for dark green text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/dgreen.png" alt="dgreen" class="field-img">
+                        <h4>Dg</h4>
+                    </div>
+                </div>
+                <!-- LRED -->
+                <hr class="section-hr" id="lred-hr">
+                <div class="field">
+                    <h3 class="sub-heading">LRED</h3>
+                    <p class="code-heading">public static final String LRED</p>
+                    <p class="field-description">Used for light red text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/lred.png" alt="lred" class="field-img">
+                        <h4>Lr</h4>
+                    </div>
+                </div>
+                <!-- DRED -->
+                <hr class="section-hr" id="dred-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DRED</h3>
+                    <p class="code-heading">public static final String DRED</p>
+                    <p class="field-description">Used for dark red text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/dred.png" alt="dred" class="field-img">
+                        <h4>Dr</h4>
+                    </div>
+                </div>
+                <!-- LWHITE -->
+                <hr class="section-hr" id="lwhite-hr">
+                <div class="field">
+                    <h3 class="sub-heading">LWHITE</h3>
+                    <p class="code-heading">public static final String LWHITE</p>
+                    <p class="field-description">Used for light white text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/lwhite.png" alt="lwhite" class="field-img">
+                        <h4>Lw</h4>
+                    </div>
+                </div>
+                <!-- DWHITE -->
+                <hr class="section-hr" id="dwhite-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DWHITE</h3>
+                    <p class="code-heading">public static final String DWHITE</p>
+                    <p class="field-description">Used for dark white text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/dwhite.png" alt="dwhite" class="field-img">
+                        <h4>Dw</h4>
+                    </div>
+                </div>
+                <!-- LBLUE -->
+                <hr class="section-hr" id="lblue-hr">
+                <div class="field">
+                    <h3 class="sub-heading">LBLUE</h3>
+                    <p class="code-heading">public static final String LBLUE</p>
+                    <p class="field-description">Used for light blue text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/lblue.png" alt="lblue" class="field-img">
+                        <h4>Lb</h4>
+                    </div>
+                </div>
+                <!-- DBLUE -->
+                <hr class="section-hr" id="dblue-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DBLUE</h3>
+                    <p class="code-heading">public static final String DBLUE</p>
+                    <p class="field-description">Used for dark blue text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/dblue.png" alt="dblue" class="field-img">
+                        <h4>Db</h4>
+                    </div>
+                </div>
+                <!-- LCYAN -->
+                <hr class="section-hr" id="lcyan-hr">
+                <div class="field">
+                    <h3 class="sub-heading">LCYAN</h3>
+                    <p class="code-heading">public static final String LCYAN</p>
+                    <p class="field-description">Used for light cyan text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/lcyan.png" alt="lcyan" class="field-img">
+                        <h4>Lc</h4>
+                    </div>
+                </div>
+                <!-- DCYAN -->
+                <hr class="section-hr" id="dcyan-hr">
+                <div class="field">
+                    <h3 class="sub-heading">DCYAN</h3>
+                    <p class="code-heading">public static final String DCYAN</p>
+                    <p class="field-description">Used for dark cyan text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/dcyan.png" alt="dcyan" class="field-img">
+                        <h4>Dc</h4>
+                    </div>
+                </div>
+                <!-- ORANGE -->
+                <hr class="section-hr" id="orange-hr">
+                <div class="field">
+                    <h3 class="sub-heading">ORANGE</h3>
+                    <p class="code-heading">public static final String ORANGE</p>
+                    <p class="field-description">Used for orange text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/orange.png" alt="orange" class="field-img">
+                        <h4>o</h4>
+                    </div>
+                </div>
+                <!-- BLACK -->
+                <hr class="section-hr" id="black-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BLACK</h3>
+                    <p class="code-heading">public static final String BLACK</p>
+                    <p class="field-description">Used for black text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/black.png" alt="black" class="field-img">
+                        <h4>b</h4>
+                    </div>
+                </div>
+                <!-- MAGENTA -->
+                <hr class="section-hr" id="magenta-hr">
+                <div class="field">
+                    <h3 class="sub-heading">MAGENTA</h3>
+                    <p class="code-heading">public static final String MAGENTA</p>
+                    <p class="field-description">Used for magenta text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/magenta.png" alt="magenta" class="field-img">
+                        <h4>m</h4>
+                    </div>
+                </div>
+                <!-- YELLOW -->
+                <hr class="section-hr" id="yellow-hr">
+                <div class="field">
+                    <h3 class="sub-heading">YELLOW</h3>
+                    <p class="code-heading">public static final String YELLOW</p>
+                    <p class="field-description">Used for yellow text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/yellow.png" alt="yellow" class="field-img">
+                        <h4>y</h4>
+                    </div>
+                </div>
+                <!-- LEMON -->
+                <hr class="section-hr" id="lemon-hr">
+                <div class="field">
+                    <h3 class="sub-heading">LEMON</h3>
+                    <p class="code-heading">public static final String LEMON</p>
+                    <p class="field-description">Used for lemon text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/lemon.png" alt="lemon" class="field-img">
+                        <h4>l</h4>
+                    </div>
+                </div>
+                <!-- PINK -->
+                <hr class="section-hr" id="pink-hr">
+                <div class="field">
+                    <h3 class="sub-heading">PINK</h3>
+                    <p class="code-heading">public static final String PINK</p>
+                    <p class="field-description">Used for pink text.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/pink.png" alt="pink" class="field-img">
+                        <h4>p</h4>
+                    </div>
+                </div>
             </div>
-            <!-- ITALIC -->
-            <hr class="section-hr" id="italic">
-            <div class="field">
-                <h3 class="sub-heading">ITALIC</h3>
-                <p class="code-heading">public static final String ITALIC</p>
-                <p class="field-description">Used for italic text.</p>
+            
+            <!-- BACKGROUNDS -->
+            <div>
+                <h3 class="heading">Backgrounds</h3>
+                <!-- BGDGREEN -->
+                <hr class="section-hr" id="bgdgreen-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGDGREEN</h3>
+                    <p class="code-heading">public static final String BGDGREEN</p>
+                    <p class="field-description">Used for dark green background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgdgreen.png" alt="bgdgreen" class="field-img">
+                        <h4>dgreen</h4>
+                    </div>
+                </div>
+                <!-- BGLGREEN -->
+                <hr class="section-hr" id="bglgreen-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLGREEN</h3>
+                    <p class="code-heading">public static final String BGLGREEN</p>
+                    <p class="field-description">Used for light green background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglgreen.png" alt="bglgreen" class="field-img">
+                        <h4>lgreen</h4>
+                    </div>
+                </div>
+                <!-- BGMGREEN -->
+                <hr class="section-hr" id="bgmgreen-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGMGREEN</h3>
+                    <p class="code-heading">public static final String BGMGREEN</p>
+                    <p class="field-description">Used for medium green background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgmgreen.png" alt="bgmgreen class="field-img">
+                        <h4>mgreen</h4>
+                    </div>
+                </div>
+                <!-- BGDRED -->
+                <hr class="section-hr" id="bgdred-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGDRED</h3>
+                    <p class="code-heading">public static final String BGDRED</p>
+                    <p class="field-description">Used for dark red background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgdred.png" alt="bgdred" class="field-img">
+                        <h4>dred</h4>
+                    </div>
+                </div>
+                <!-- BGLRED -->
+                <hr class="section-hr" id="bglred-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLRED</h3>
+                    <p class="code-heading">public static final String BGLRED</p>
+                    <p class="field-description">Used for light red background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglred.png" alt="bglred" class="field-img">
+                        <h4>lred</h4>
+                    </div>
+                </div>
+                <!-- BGDORANGE -->
+                <hr class="section-hr" id="bgdorange-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGDORANGE</h3>
+                    <p class="code-heading">public static final String BGDORANGE</p>
+                    <p class="field-description">Used for dark orange background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgdorange.png" alt="bgdorange" class="field-img">
+                        <h4>dorange</h4>
+                    </div>
+                </div>
+                <!-- BGLORANGE -->
+                <hr class="section-hr" id="bglorange-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLORANGE</h3>
+                    <p class="code-heading">public static final String BGLORANGE</p>
+                    <p class="field-description">Used for light orange background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglorange.png" alt="bglorange" class="field-img">
+                        <h4>lorange</h4>
+                    </div>
+                </div>
+                <!-- BGLBLUE -->
+                <hr class="section-hr" id="bglblue-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLBLUE</h3>
+                    <p class="code-heading">public static final String BGLBLUE</p>
+                    <p class="field-description">Used for light blue background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglblue.png" alt="bglblue" class="field-img">
+                        <h4>lblue</h4>
+                    </div>
+                </div>
+                <!-- BGLWHITE -->
+                <hr class="section-hr" id="bglwhite-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLWHITE</h3>
+                    <p class="code-heading">public static final String BGLWHITE</p>
+                    <p class="field-description">Used for light white background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglwhite.png" alt="bglwhite class="field-img">
+                        <h4>lwhite</h4>
+                    </div>
+                </div>
+                <!-- BGDWHITE -->
+                <hr class="section-hr" id="bgdwhite-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGDWHITE</h3>
+                    <p class="code-heading">public static final String BGDWHITE</p>
+                    <p class="field-description">Used for dark white background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgdwhite.png" alt="bgdwhite" class="field-img">
+                        <h4>dwhite</h4>
+                    </div>
+                </div>
+                <!-- BGLEMON -->
+                <hr class="section-hr" id="bglemon-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLEMON</h3>
+                    <p class="code-heading">public static final String BGLEMON</p>
+                    <p class="field-description">Used for lemon background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglemon.png" alt="bglemon" class="field-img">
+                        <h4>lemon</h4>
+                    </div>
+                </div>
+                <!-- BGMPINK -->
+                <hr class="section-hr" id="bgmpink-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGMPINK</h3>
+                    <p class="code-heading">public static final String BGMPINK</p>
+                    <p class="field-description">Used for medium pink background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgmpink.png" alt="bgmpink" class="field-img">
+                        <h4>mpink</h4>
+                    </div>
+                </div>
+                <!-- BGDPINK -->
+                <hr class="section-hr" id="bgdpink-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGDPINK</h3>
+                    <p class="code-heading">public static final String BGDPINK</p>
+                    <p class="field-description">Used for dark pink background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bgdpink.png" alt="bgdpink" class="field-img">
+                        <h4>dpink</h4>
+                    </div>
+                </div>
+                <!-- BGLPINK -->
+                <hr class="section-hr" id="bglpink-hr">
+                <div class="field">
+                    <h3 class="sub-heading">BGLPINK</h3>
+                    <p class="code-heading">public static final String BGLPINK</p>
+                    <p class="field-description">Used for light pink background.</p>
+                    <div class="field-div heading">
+                        <img src="../images/docs/bglpink.png" alt="bglpink" class="field-img">
+                        <h4>lpink</h4>
+                    </div>
+                </div>
             </div>
-            <!-- UNDERLINE -->
-            <hr class="section-hr" id="underline">
-            <div class="field">
-                <h3 class="sub-heading">UNDERLINE</h3>
-                <p class="code-heading">public static final String UNDERLINE</p>
-                <p class="field-description">Used for underline text.</p>
-            </div>
-            <!-- BLINK -->
-            <hr class="section-hr" id="blink">
-            <div class="field">
-                <h3 class="sub-heading">BLINK</h3>
-                <p class="code-heading">public static final String BLINK</p>
-                <p class="field-description">Used for blinking text.</p>
-            </div>
-            <!-- HIDDEN -->
-            <hr class="section-hr" id="hidden">
-            <div class="field">
-                <h3 class="sub-heading">HIDDEN</h3>
-                <p class="code-heading">public static final String HIDDEN</p>
-                <p class="field-description">Used for hidden text.</p>
-            </div>
-            <!-- CUT -->
-            <hr class="section-hr" id="cut">
-            <div class="field">
-                <h3 class="sub-heading">CUT</h3>
-                <p class="code-heading">public static final String CUT</p>
-                <p class="field-description">Used for strikethrough text.</p>
-            </div>
-            <!-- DOUBLE LINE -->
-            <hr class="section-hr" id="doubleline">
-            <div class="field">
-                <h3 class="sub-heading">DOUBLELINE</h3>
-                <p class="code-heading">public static final String DOUBLELINE</p>
-                <p class="field-description">Used for double line text.</p>
-            </div>
-            <!-- OVERLINE -->
-            <hr class="section-hr" id="overline">
-            <div class="field">
-                <h3 class="sub-heading">OVERLINE</h3>
-                <p class="code-heading">public static final String OVERLINE</p>
-                <p class="field-description">Used for over line text.</p>
-            </div>
-            <!-- DEFAULT -->
-            <hr class="section-hr" id="default">
-            <div class="field">
-                <h3 class="sub-heading">DEFAULT</h3>
-                <p class="code-heading">public static final String DEFAULT</p>
-                <p class="field-description">Used for default text.</p>
-            </div>
-            <!-- LGREEN -->
-            <hr class="section-hr" id="lgreen">
-            <div class="field">
-                <h3 class="sub-heading">LGREEN</h3>
-                <p class="code-heading">public static final String LGREEN</p>
-                <p class="field-description">Used for light green text.</p>
-            </div>
-            <!-- MGREEN -->
-            <hr class="section-hr" id="mgreen">
-            <div class="field">
-                <h3 class="sub-heading">MGREEN</h3>
-                <p class="code-heading">public static final String MGREEN</p>
-                <p class="field-description">Used for medium green text.</p>
-            </div>
-            <!-- DGREEN -->
-            <hr class="section-hr" id="dgreen">
-            <div class="field">
-                <h3 class="sub-heading">DGREEN</h3>
-                <p class="code-heading">public static final String DGREEN</p>
-                <p class="field-description">Used for dark green text.</p>
-            </div>
-            <!-- LRED -->
-            <hr class="section-hr" id="lred">
-            <div class="field">
-                <h3 class="sub-heading">LRED</h3>
-                <p class="code-heading">public static final String LRED</p>
-                <p class="field-description">Used for light red text.</p>
-            </div>
-            <!-- DRED -->
-            <hr class="section-hr" id="dred">
-            <div class="field">
-                <h3 class="sub-heading">DRED</h3>
-                <p class="code-heading">public static final String DRED</p>
-                <p class="field-description">Used for dark red text.</p>
-            </div>
-            <!-- LWHITE -->
-            <hr class="section-hr" id="lwhite">
-            <div class="field">
-                <h3 class="sub-heading">LWHITE</h3>
-                <p class="code-heading">public static final String LWHITE</p>
-                <p class="field-description">Used for light white text.</p>
-            </div>
-            <!-- DWHITE -->
-            <hr class="section-hr" id="dwhite">
-            <div class="field">
-                <h3 class="sub-heading">DWHITE</h3>
-                <p class="code-heading">public static final String DWHITE</p>
-                <p class="field-description">Used for dark white text.</p>
-            </div>
-            <!-- LBLUE -->
-            <hr class="section-hr" id="lblue">
-            <div class="field">
-                <h3 class="sub-heading">LBLUE</h3>
-                <p class="code-heading">public static final String LBLUE</p>
-                <p class="field-description">Used for light blue text.</p>
-            </div>
-            <!-- DBLUE -->
-            <hr class="section-hr" id="dblue">
-            <div class="field">
-                <h3 class="sub-heading">DBLUE</h3>
-                <p class="code-heading">public static final String DBLUE</p>
-                <p class="field-description">Used for dark blue text.</p>
-            </div>
-            <!-- LCYAN -->
-            <hr class="section-hr" id="lcyan">
-            <div class="field">
-                <h3 class="sub-heading">LCYAN</h3>
-                <p class="code-heading">public static final String LCYAN</p>
-                <p class="field-description">Used for light cyan text.</p>
-            </div>
-            <!-- DCYAN -->
-            <hr class="section-hr" id="dcyan">
-            <div class="field">
-                <h3 class="sub-heading">DCYAN</h3>
-                <p class="code-heading">public static final String DCYAN</p>
-                <p class="field-description">Used for dark cyan text.</p>
-            </div>
-            <!-- ORANGE -->
-            <hr class="section-hr" id="orange">
-            <div class="field">
-                <h3 class="sub-heading">ORANGE</h3>
-                <p class="code-heading">public static final String ORANGE</p>
-                <p class="field-description">Used for orange text.</p>
-            </div>
-            <!-- BLACK -->
-            <hr class="section-hr" id="black">
-            <div class="field">
-                <h3 class="sub-heading">BLACK</h3>
-                <p class="code-heading">public static final String BLACK</p>
-                <p class="field-description">Used for black text.</p>
-            </div>
-            <!-- MAGENTA -->
-            <hr class="section-hr" id="magenta">
-            <div class="field">
-                <h3 class="sub-heading">MAGENTA</h3>
-                <p class="code-heading">public static final String MAGENTA</p>
-                <p class="field-description">Used for magenta text.</p>
-            </div>
-            <!-- YELLOW -->
-            <hr class="section-hr" id="yellow">
-            <div class="field">
-                <h3 class="sub-heading">YELLOW</h3>
-                <p class="code-heading">public static final String YELLOW</p>
-                <p class="field-description">Used for yellow text.</p>
-            </div>
-            <!-- LEMON -->
-            <hr class="section-hr" id="lemon">
-            <div class="field">
-                <h3 class="sub-heading">LEMON</h3>
-                <p class="code-heading">public static final String LEMON</p>
-                <p class="field-description">Used for lemon text.</p>
-            </div>
-            <!-- PINK -->
-            <hr class="section-hr" id="pink">
-            <div class="field">
-                <h3 class="sub-heading">PINK</h3>
-                <p class="code-heading">public static final String PINK</p>
-                <p class="field-description">Used for pink text.</p>
-            </div>
-            <!-- BGDGREEN -->
-            <hr class="section-hr" id="bgdgreen">
-            <div class="field">
-                <h3 class="sub-heading">BGDGREEN</h3>
-                <p class="code-heading">public static final String BGDGREEN</p>
-                <p class="field-description">Used for dark green background.</p>
-            </div>
-            <!-- BGLGREEN -->
-            <hr class="section-hr" id="bglgreen">
-            <div class="field">
-                <h3 class="sub-heading">BGLGREEN</h3>
-                <p class="code-heading">public static final String BGLGREEN</p>
-                <p class="field-description">Used for light green background.</p>
-            </div>
-            <!-- BGMGREEN -->
-            <hr class="section-hr" id="bgmgreen">
-            <div class="field">
-                <h3 class="sub-heading">BGMGREEN</h3>
-                <p class="code-heading">public static final String BGMGREEN</p>
-                <p class="field-description">Used for medium green background.</p>
-            </div>
-            <!-- BGDRED -->
-            <hr class="section-hr" id="bgdred">
-            <div class="field">
-                <h3 class="sub-heading">BGDRED</h3>
-                <p class="code-heading">public static final String BGDRED</p>
-                <p class="field-description">Used for dark red background.</p>
-            </div>
-            <!-- BGLRED -->
-            <hr class="section-hr" id="bglred">
-            <div class="field">
-                <h3 class="sub-heading">BGLRED</h3>
-                <p class="code-heading">public static final String BGLRED</p>
-                <p class="field-description">Used for light red background.</p>
-            </div>
-            <!-- BGDORANGE -->
-            <hr class="section-hr" id="bgdorange">
-            <div class="field">
-                <h3 class="sub-heading">BGDORANGE</h3>
-                <p class="code-heading">public static final String BGDORANGE</p>
-                <p class="field-description">Used for dark orange background.</p>
-            </div>
-            <!-- BGLORANGE -->
-            <hr class="section-hr" id="bglorange">
-            <div class="field">
-                <h3 class="sub-heading">BGLORANGE</h3>
-                <p class="code-heading">public static final String BGLORANGE</p>
-                <p class="field-description">Used for light orange background.</p>
-            </div>
-            <!-- BGLBLUE -->
-            <hr class="section-hr" id="bglblue">
-            <div class="field">
-                <h3 class="sub-heading">BGLBLUE</h3>
-                <p class="code-heading">public static final String BGLBLUE</p>
-                <p class="field-description">Used for light blue background.</p>
-            </div>
-            <!-- BGLWHITE -->
-            <hr class="section-hr" id="bglwhite">
-            <div class="field">
-                <h3 class="sub-heading">BGLWHITE</h3>
-                <p class="code-heading">public static final String BGLWHITE</p>
-                <p class="field-description">Used for light white background.</p>
-            </div>
-            <!-- BGDWHITE -->
-            <hr class="section-hr" id="bgdwhite">
-            <div class="field">
-                <h3 class="sub-heading">BGDWHITE</h3>
-                <p class="code-heading">public static final String BGDWHITE</p>
-                <p class="field-description">Used for dark white background.</p>
-            </div>
-            <!-- BGLEMON -->
-            <hr class="section-hr" id="bglemon">
-            <div class="field">
-                <h3 class="sub-heading">BGLEMON</h3>
-                <p class="code-heading">public static final String BGLEMON</p>
-                <p class="field-description">Used for lemon background.</p>
-            </div>
-            <!-- BGMPINK -->
-            <hr class="section-hr" id="bgmpink">
-            <div class="field">
-                <h3 class="sub-heading">BGMPINK</h3>
-                <p class="code-heading">public static final String BGMPINK</p>
-                <p class="field-description">Used for medium pink background.</p>
-            </div>
-            <!-- BGDPINK -->
-            <hr class="section-hr" id="bgdpink">
-            <div class="field">
-                <h3 class="sub-heading">BGDPINK</h3>
-                <p class="code-heading">public static final String BGDPINK</p>
-                <p class="field-description">Used for dark pink background.</p>
-            </div>
-            <!-- BGLPINK -->
-            <hr class="section-hr" id="bglpink">
-            <div class="field">
-                <h3 class="sub-heading">BGLPINK</h3>
-                <p class="code-heading">public static final String BGLPINK</p>
-                <p class="field-description">Used for light pink background.</p>
-            </div>
+            
         </div>
-
     </section>
 
     <!-- FOOTER SECTION -->
     <footer>
         <div id="footer-poweredby">
             <span id="footer-poweredby-span">Powered By</span>
-            <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+            <a href="https://techous.github.io/">
+                <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+            </a>
         </div>
         <div>
             Copyright &copy; TechOUs 2020
