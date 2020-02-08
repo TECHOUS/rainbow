@@ -18,10 +18,7 @@
   color: black; }
 
 #copyToClipboard1,
-#copyToClipboard2 {
-  position: absolute;
-  margin-top: -15px; }
-
+#copyToClipboard2,
 #copyToClipboard3,
 #copyToClipboard4,
 #copyToClipboard5,
@@ -110,19 +107,23 @@
   position: absolute;
   border: 1px solid black;
   width: 50%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   background-color: #BAD7F2;
   color: black;
-  display: none; }
+  display: none;
+  overflow-y: scroll; }
 
 .searchResultsDiv {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 5px; }
 
 .searchResults-a {
   color: black;
   text-decoration: none; }
+
+#searchCross {
+  color: #BAD7F2;
+  display: none; }
 
 #rbw-logo {
   height: 60px;
@@ -389,7 +390,9 @@ section p {
 .copyMainCode,
 .copyMainCodeEclipse,
 .copyVSCode,
-.copyTextCode {
+.copyTextCode,
+#copyMvnText,
+#copyText {
   font-family: "Fira Sans", sans-serif;
   word-spacing: 2px; }
 

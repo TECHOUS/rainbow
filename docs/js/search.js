@@ -4,31 +4,54 @@ let results = [];
 init();                                                         // this function initializes all the values
 let find = document.getElementById('header-buttons-search');
 let searchResults = document.getElementById('searchResults');
+let searchCross = document.getElementById('searchCross');
 find.addEventListener("keyup",(event)=>{
     if(find.value.length > 0){
         showSearchResults();
+        showSearchCross();
         removeSearchResults();
         search(find.value);
     }else{
         hideSearchResults();
+        hideSearchCross();
     }
 })
 
 const showSearchResults = ()=>{
     searchResults.style.display = "block";
+    const body = document.body;
+    body.style.overflowY = 'hidden';
 }
 
 const hideSearchResults = ()=>{
     searchResults.style.display = "none";
+    const body = document.body;
+    body.style.overflowY = 'scroll';
 }
 
 const search = (searchString)=>{
     let index = searchString.length;
     results = [];
-    for(let i=0;i<searchArray.length;i++){
-        if(searchArray[i].toUpperCase().includes(searchString.toUpperCase())){
-            results.push(searchArray[i]);
-        }
+    switch(searchString){
+        case "*":
+            results = searchArray;
+            break;
+        default:
+            for(let i=0;i<searchArray.length;i++){
+                if(searchArray[i].toUpperCase().includes(searchString.toUpperCase())){
+                    results.push(searchArray[i]);
+                }
+            }
+            break;
+    }
+    // handling dynamic length
+    if(results.length==0){                  // if no records come hide the results tab
+        hideSearchResults();
+    }
+    else if(results.length > 5){
+        searchResults.style.height="250px";
+    }else{
+        searchResults.style.height="";
     }
     render(results);
 }
@@ -41,6 +64,7 @@ const render = (results)=>{
         div.addEventListener('click',()=>{
             hideSearchResults();
             clearSearchField();
+            hideSearchCross();
         });
 
         let a = document.createElement("a");
@@ -68,9 +92,8 @@ const removeSearchResults = ()=>{
 // this function creates the valid page link
 const createPageLink = (result)=>{
     let link = "#";
-        result = result.split(" ").join("-");
-        link = link+result.toLowerCase()+"-hr";
-    
+    result = result.split(" ").join("-");
+    link = link+result.toLowerCase()+"-hr";
     return link;
 }
 
@@ -78,3 +101,17 @@ const createPageLink = (result)=>{
 const clearSearchField = ()=>{
     find.value = "";
 }
+
+const showSearchCross = ()=>{
+    searchCross.style.display = "inline";
+}
+
+const hideSearchCross = ()=>{
+    searchCross.style.display = "none";
+}
+
+searchCross.addEventListener('click', ()=>{
+    hideSearchResults();
+    clearSearchField();
+    hideSearchCross();
+})

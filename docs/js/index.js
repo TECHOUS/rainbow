@@ -181,7 +181,6 @@ copyToClipboard10.addEventListener('click',()=>{
 })
 
 let init =()=>{
-    console.log("init");
     searchArray.push("Description");
     searchArray.push("Rainbow Java Package");
     searchArray.push("Class Codes");
