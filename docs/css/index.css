@@ -106,6 +106,24 @@
   background-color: #BAD7F2;
   font-size: 18px; }
 
+#searchResults {
+  position: absolute;
+  border: 1px solid black;
+  width: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #BAD7F2;
+  color: black;
+  display: none; }
+
+.searchResultsDiv {
+  border: 1px solid black;
+  padding: 5px; }
+
+.searchResults-a {
+  color: black;
+  text-decoration: none; }
+
 #rbw-logo {
   height: 60px;
   width: 60px;
@@ -186,23 +204,23 @@ section p {
 .section-h2 {
   text-decoration: underline; }
 
-#rbw-description {
+#description-hr {
   padding: 50px;
   padding-top: 200px;
   background-color: #282c34;
   color: #BAD7F2;
   text-align: center; }
 
-#rbw-description > h1 {
+#description-hr > h1 {
   font-size: 2em; }
 
-#rbw-description > p {
+#description-hr > p {
   color: white;
   font-size: 20px;
   padding: 10px;
   margin-top: 40px; }
 
-#rbw-description-button {
+#description-hr-button {
   border: none;
   outline: none;
   font-size: 18px;
@@ -211,7 +229,7 @@ section p {
   background-color: #BAD7F2;
   margin-top: 50px; }
 
-#rbw-description-button-docs {
+#description-hr-button-docs {
   border: none;
   outline: none;
   font-size: 16px;

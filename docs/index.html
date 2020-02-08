@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rainbow - Java library</title>
-    <script src="js/hello.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="js/search.js" defer></script>
     <link rel="stylesheet" href="css/index.css">
     
     <!-- GOOGLE FONTS -->
@@ -21,13 +21,15 @@
     <!-- HEADER -->
     <header id="header">
         <div class="header-buttons">
-            <a href="#rbw-description"><i class="fas fa-rainbow fa-2x"></i></a>
-            <span id="header-buttons-rainbow"><a href="#rbw-description">Rainbow</a></span>
+            <a href="#description-hr"><i class="fas fa-rainbow fa-2x"></i></a>
+            <span id="header-buttons-rainbow"><a href="#description-hr">Rainbow</a></span>
         </div>
         <div class="header-buttons">
             <div id="header-buttons-search-div">
                 <i class="fas fa-search"></i>
                 <input id="header-buttons-search" type="text" placeholder="search">
+                <div id="searchResults">
+                </div>
             </div>
         </div>
         <div class="header-buttons">
@@ -47,8 +49,8 @@
                 <h2 id="rbwNavScreen-content-h2">Rainbow Index</h2>
                 <hr id="hr-line">
                 <ul id="rbw-navlist" class="rbw-list">
-                    <li><a href="#rbw-description" class="nav-links">Description</a></li>
-                    <li><a href="#documentation-section-hr" class="nav-links">Rainbow Java Package</a></li>
+                    <li><a href="#description-hr" class="nav-links">Description</a></li>
+                    <li><a href="#rainbow-java-package-hr" class="nav-links">Rainbow Java Package</a></li>
                     <ul class="rbw-list left-list">
                         <li><a href="#class-codes-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Class Codes</a></li>
                         <li><a href="#interface-procedures-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Interface Procedures</a></li>
@@ -56,36 +58,36 @@
                     </ul>
                     <li><a href="#getting-started-hr" class="nav-links">Getting Started</a></li>
                     <ul class="rbw-list left-list">
-                        <li><a href="" class="nav-links"><i class="fas fa-chevron-right"></i> Developer Use</a></li>
-                        <li><a href="" class="nav-links"><i class="fas fa-chevron-right"></i> Library Jar Use</a></li>
-                        <li><a href="" class="nav-links"><i class="fas fa-chevron-right"></i> Github Java Package Use</a></li>
+                        <li><a href="#getting-started-developer-use-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Developer Use</a></li>
+                        <li><a href="#getting-started-library-jar-use-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Library Jar Use</a></li>
+                        <li><a href="#getting-started-github-java-package-use-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Github Java Package Use</a></li>
                     </ul>
                     <li><a href="#developer-use-hr" class="nav-links">Developer Use</a></li>
                     <ul class="rbw-list left-list">
-                        <li><a href="#developer-use-intellij" class="nav-links"><i class="fas fa-chevron-right"></i> Intellij Idea</a></li>
+                        <li><a href="#developer-use-intellij-idea-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Intellij Idea</a></li>
                         <ul class="rbw-list sub-list">
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Using of App Class in Rainbow Package</a></li>
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Adding customization to Rainbow Library</a></li>
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Building local Artifacts and use of library jar</a></li>
+                            <li><a href="#intellij-idea-using-of-app-class-in-rainbow-package-hr" class="nav-links"><i class="far fa-snowflake"></i> Using of App Class in Rainbow Package</a></li>
+                            <li><a href="#intellij-idea-adding-customization-to-rainbow-library-hr" class="nav-links"><i class="far fa-snowflake"></i> Adding customization to Rainbow Library</a></li>
+                            <li><a href="#intellij-idea-building-local-artifacts-and-use-of-library-jar-hr" class="nav-links"><i class="far fa-snowflake"></i> Building local Artifacts and use of library jar</a></li>
                         </ul>
-                        <li><a href="#developer-use-eclipse" class="nav-links"><i class="fas fa-chevron-right"></i> Eclipse</a></li>
+                        <li><a href="#developer-use-eclipse-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Eclipse</a></li>
                         <ul class="rbw-list sub-list">
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Using of App Class in Rainbow Package</a></li>
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Adding customization to Rainbow Library</a></li>
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Exporting local library Jar</a></li>
+                            <li><a href="#eclipse-using-of-app-class-in-rainbow-package-hr" class="nav-links"><i class="far fa-snowflake"></i> Using of App Class in Rainbow Package</a></li>
+                            <li><a href="#eclipse-adding-customization-to-rainbow-library-hr" class="nav-links"><i class="far fa-snowflake"></i> Adding customization to Rainbow Library</a></li>
+                            <li><a href="#eclipse-creating-local-jar-with-eclipse-hr" class="nav-links"><i class="far fa-snowflake"></i> Exporting local library Jar</a></li>
                         </ul>
-                        <li><a href="#developer-use-vscode" class="nav-links"><i class="fas fa-chevron-right"></i> VS Code</a></li>
+                        <li><a href="#developer-use-vs-code-hr" class="nav-links"><i class="fas fa-chevron-right"></i> VS Code</a></li>
                         <ul class="rbw-list sub-list">
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Using of App class in VS Code</a></li>
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Customize with VS Code</a></li>
-                            <li><a href="" class="nav-links"><i class="far fa-snowflake"></i> Creating local jar with vscode</a></li>
+                            <li><a href="#vs-code-using-of-app-class-in-vs-code-hr" class="nav-links"><i class="far fa-snowflake"></i> Using of App class in VS Code</a></li>
+                            <li><a href="#vs-code-customize-with-vscode-hr" class="nav-links"><i class="far fa-snowflake"></i> Customize with VS Code</a></li>
+                            <li><a href="#vs-code-creating-local-jar-with-vscode-hr" class="nav-links"><i class="far fa-snowflake"></i> Creating local jar with vscode</a></li>
                         </ul>
                     </ul>
-                    <li><a href="#library-jar-usage-hr" class="nav-links">Library Jar Use</a></li>
+                    <li><a href="#library-jar-use-hr" class="nav-links">Library Jar Use</a></li>
                     <ul class="rbw-list left-list">
-                        <li><a href="#" class="nav-links"><i class="fas fa-chevron-right"></i> Intellij Idea</a></li>
-                        <li><a href="#" class="nav-links"><i class="fas fa-chevron-right"></i> Eclipse</a></li>
-                        <li><a href="#" class="nav-links"><i class="fas fa-chevron-right"></i> VS Code</a></li>
+                        <li><a href="#library-jar-use-intellij-idea-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Intellij Idea</a></li>
+                        <li><a href="#library-jar-use-eclipse-hr" class="nav-links"><i class="fas fa-chevron-right"></i> Eclipse</a></li>
+                        <li><a href="#library-jar-use-vs-code-hr" class="nav-links"><i class="fas fa-chevron-right"></i> VS Code</a></li>
                     </ul>
                     <li><a href="#github-java-package-use-hr" class="nav-links">Github Java Package Use</a></li>
                     <ul class="rbw-list left-list">
@@ -94,7 +96,7 @@
                         <li><a href="#" class="nav-links"><i class="fas fa-chevron-right"></i> VS Code</a></li>
                     </ul>    
                     <li><a href="#contribution-hr" class="nav-links">Contribution</a></li>
-                    <li><a href="#LICENSE-hr" class="nav-links">LICENSE</a></li>
+                    <li><a href="#license-hr" class="nav-links">LICENSE</a></li>
                     <li><a href="#version-hr" class="nav-links">Version</a></li>
                 </ul>
             </div>
@@ -104,19 +106,19 @@
     <!-- MAIN DOCUMENTATION -->
 
     <!-- DESCRIPTION -->
-    <section id="rbw-description">
+    <section id="description-hr">
         <h1>Rainbow</h1>
         <p>Best Java library to create colorful <br>User Interfaces for Linux terminals.</p>
         <a href="#getting-started-hr">
-            <button id="rbw-description-button">Getting Started</button>
+            <button id="description-hr-button">Getting Started</button>
         </a>
-        <a href="#documentation-section-hr" id="rbw-description-a">
-            <button id="rbw-description-button-docs">Read Docs ></button>
+        <a href="#rainbow-java-package-hr" id="description-hr-a">
+            <button id="description-hr-button-docs">Read Docs ></button>
         </a>
     </section>
 
     <!-- RAINBOW PACKAGE DOCUMENTATION -->
-    <hr class="section-hr" id="documentation-section-hr">
+    <hr class="section-hr" id="rainbow-java-package-hr">
     <section id="rbw-java-package">
         <h2 class="rbw-java-package-heading">
             <i class="fas fa-archive"></i>&nbsp;
@@ -283,7 +285,7 @@
         <h2>Getting Started</h2>
         <p><span class="bold">Before getting started you need to have Linux OS installed in your machine for this library to work properly.</span> The Rainbow is the java library to make good User Interfaces for Linux terminals. There are many ways through which
             can get a start use of this library. Below are the following type of uses you can start with:</p>
-        <hr class="section-hr" id="getting-started-developer-use">
+        <hr class="section-hr" id="getting-started-developer-use-hr">
         <div>
             <h3>Developer Use</h3> 
             <p>So if you are a java developer you have to install these technologies in your machine.</p>
@@ -320,6 +322,7 @@
             </div>
         </div>
 
+        <hr class="section-hr" id="getting-started-library-jar-use-hr">
         <div>
             <h3>Library Jar Usage</h3>
             <p>So if you want to use this library jar as a dependency then you have to install these technologies in your machine</p>
@@ -347,12 +350,13 @@
             </div>
             <div class="moreDiv">
                 <p class="italic">For complete Library Jar Usage click below</p>
-                <a href="#library-jar-usage-hr">
+                <a href="#library-jar-use-hr">
                     <button class="moreButton">more</button>
                 </a>
             </div>
         </div>
 
+        <hr class="section-hr" id="getting-started-github-java-package-use-hr">
         <div>
             <h3>Github Package Registory Use</h3>
             <p class="bold">Follow the first 3 steps of the <a href="#getting-started-hr">developer use</a> then follow below steps.</p>
@@ -387,9 +391,10 @@
         <h2>Developer Use</h2>
         <p>Before starting to use the library you have to <a href="#getting-started-developer-use">follow above three steps</a>.
         After following the steps follow below steps according to your IDE:</p>
-        <hr class="section-hr" id="developer-use-intellij">
+        <hr class="section-hr" id="developer-use-intellij-idea-hr">
         <div>
             <h3>Intellij Idea</h3>
+            <hr class="section-hr" id="intellij-idea-using-of-app-class-in-rainbow-package-hr">
             <div>
                 <h4>Using of App Class in Rainbow Package</h4>
                 <ol class="developer-use-ol">
@@ -406,6 +411,7 @@
                         functions in our library then you can see our next section.</li>
                 </ol>
             </div>
+            <hr class="section-hr" id="intellij-idea-adding-customization-to-rainbow-library-hr">
             <div>
                 <h4>Adding customization to Rainbow Library</h4>
                 <ol class="developer-use-ol">
@@ -440,6 +446,7 @@
                     </a>
                 </ol>
             </div>
+            <hr class="section-hr" id="intellij-idea-building-local-artifacts-and-use-of-library-jar-hr">
             <div>
                 <h4>Building local Artifacts and use of library jar</h4>
                 <ol class="developer-use-ol">
@@ -468,8 +475,10 @@
                 </ol>
             </div>
         </div>
+        <hr class="section-hr" id="developer-use-eclipse-hr">
         <div>
             <h3>Eclipse</h3>
+            <hr class="section-hr" id="eclipse-using-of-app-class-in-rainbow-package-hr">
             <div>
                 <h4>Using of App Class in Rainbow Package</h4>
                 <ol class="developer-use-ol">
@@ -487,6 +496,7 @@
                         then you can see our next section.</li>
                 </ol>
             </div>
+            <hr class="section-hr" id="eclipse-adding-customization-to-rainbow-library-hr">
             <div>
                 <h4>Adding customization to Rainbow Library</h4>
                 <ol class="developer-use-ol">
@@ -523,6 +533,7 @@
                     </div>
                 </ol>
             </div>
+            <hr class="section-hr" id="eclipse-creating-local-jar-with-eclipse-hr">
             <div>
                 <h4>Exporting local Library Jar</h4>
                 <ol class="developer-use-ol">
@@ -537,8 +548,10 @@
                 </ol>
             </div>
         </div>
+        <hr class="section-hr" id="developer-use-vs-code-hr">
         <div>
             <h3>VS Code</h3>
+            <hr class="section-hr" id="vs-code-using-of-app-class-in-vs-code-hr">
             <div>
                 <h4>Using of App class in VS Code</h4>
                 <ol class="developer-use-ol">
@@ -555,6 +568,7 @@
                         functions in our library then you can see our next section.</li>
                 </ol>
             </div>
+            <hr class="section-hr" id="vs-code-customize-with-vscode-hr">
             <div>
                 <h4>Customize with VS Code</h4>
                 <ol class="developer-use-ol">
@@ -592,6 +606,7 @@
                     </div>
                 </ol>
             </div>
+            <hr class="section-hr" id="vs-code-creating-local-jar-with-vscode-hr">
             <div>
                 <h4>Creating local jar with vscode</h4>
                 <ol class="developer-use-ol">
@@ -635,11 +650,12 @@
     </section>
 
     <!-- LIBRARY JAR USAGE SECTION -->
-    <hr class="section-hr" id="library-jar-usage-hr">
+    <hr class="section-hr" id="library-jar-use-hr">
     <section id="rbw-library-jar-usage">
         <h2>Library Jar Usage</h2>
         <p>Before starting make sure that you have downloaded the jar. If you have not downloaded the above jar then you can download it
             <span class="bold"><a href="#">here</a></span>.</p>
+        <hr class="section-hr" id="library-jar-use-intellij-idea-hr">
         <div>
             <h3>Intellij Idea</h3>
             <ol class="developer-use-ol">
@@ -684,6 +700,7 @@
                 <li>In this way you can add this Library Jar to your project.</li>
             </ol>
         </div>
+        <hr class="section-hr" id="library-jar-use-eclipse-hr">
         <div>
             <h3>Eclipse</h3>
             <ol class="developer-use-ol">
@@ -721,6 +738,7 @@
                 </div>
             </ol>
         </div>
+        <hr class="section-hr" id="library-jar-use-vs-code-hr">
         <div>
             <h3>VS Code</h3>
             <ol class="developer-use-ol">
@@ -811,7 +829,7 @@
     </section>
 
     <!-- LICENSE SECTION-->
-    <hr class="section-hr" id="LICENSE-hr">
+    <hr class="section-hr" id="license-hr">
     <section id="rbw-license">
         <h2>LICENSE</h2>
         <h3>MIT License</h3>

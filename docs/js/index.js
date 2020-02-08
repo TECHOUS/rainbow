@@ -2,29 +2,7 @@ let rainbowLogo = document.getElementById('rbw-logo');
 let rainbowNavScreen = document.getElementById("rbwNavScreen");
 let screenFlag = false;
 let rainbowNavList = document.getElementById('rbw-navlist');
-let searchArray = [];
 
-let init =()=>{
-    console.log("init");
-    searchArray.push("Description");
-    searchArray.push("Rainbow Java Package");
-    searchArray.push("Class Codes");
-    searchArray.push("Interface Procedures");
-    searchArray.push("Class Rainbow");
-    searchArray.push("Getting Started");
-    searchArray.push("Getting Started-Developer Use");
-
-    function extractContent(s) {
-        var span = document.createElement('span');
-        span.innerHTML = s;
-        return span.textContent || span.innerText;
-    };
-    console.log(extractContent(html));
-
-    console.log(searchArray);
-}
-
-init()
 rainbowLogo.addEventListener("click", navigation);
 rainbowNavList.addEventListener('click', navigation);
 
@@ -201,3 +179,36 @@ copyToClipboard10.addEventListener('click',()=>{
     textarea8.setSelectionRange(0, 99999);
     document.execCommand("copy");
 })
+
+let init =()=>{
+    console.log("init");
+    searchArray.push("Description");
+    searchArray.push("Rainbow Java Package");
+    searchArray.push("Class Codes");
+    searchArray.push("Interface Procedures");
+    searchArray.push("Class Rainbow");
+    searchArray.push("Getting Started");
+    searchArray.push("Getting Started-Developer Use");
+    searchArray.push("Getting Started-Library Jar Use");
+    searchArray.push("Getting Started-Github Java Package Use");
+    searchArray.push("Developer Use");
+    searchArray.push("Developer Use-Intellij Idea");
+    searchArray.push("Intellij Idea-Using of App Class in Rainbow Package");
+    searchArray.push("Intellij Idea-Adding customization to Rainbow Library");
+    searchArray.push("Intellij Idea-Building local Artifacts and use of library jar");
+    searchArray.push("Developer Use-Eclipse");
+    searchArray.push("Eclipse-Using of App Class in Rainbow Package");
+    searchArray.push("Eclipse-Adding customization to Rainbow Library");
+    searchArray.push("Eclipse-Creating local jar with eclipse");
+    searchArray.push("Developer Use-VS Code");
+    searchArray.push("VS Code-Using of App class in VS Code");
+    searchArray.push("VS Code-Customize with VS Code");
+    searchArray.push("VS Code-Creating local jar with vscode");
+    searchArray.push("Library Jar Use");
+    searchArray.push("Library Jar Use-Intellij Idea");
+    searchArray.push("Library Jar Use-Eclipse");
+    searchArray.push("Library Jar Use-VS Code");
+    searchArray.push("Contribution");
+    searchArray.push("LICENSE");
+    searchArray.push("Version");
+}
