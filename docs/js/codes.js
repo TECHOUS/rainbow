@@ -31,6 +31,9 @@ function closeNavigation(){
 }
 
 let init =()=>{
+    searchArray.push("Colors");
+    searchArray.push("Formats");
+    searchArray.push("Backgrounds");
     searchArray.push("RESET");
     searchArray.push("BOLD");
     searchArray.push("ITALIC");

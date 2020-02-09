@@ -235,9 +235,13 @@
 .field-img {
   border: 2px solid #F2BAC9; }
 
-#field-video {
-  height: 100px;
-  width: 200px; }
+#formats, #colors, #backgrounds {
+  text-align: initial;
+  margin-left: 30px;
+  color: #BAD7F2; }
+
+.bigNavLine {
+  width: 90%; }
 
 footer {
   background-color: #20232A;

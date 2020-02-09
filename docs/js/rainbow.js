@@ -29,3 +29,22 @@ function closeNavigation(){
     const body = document.body;
     body.style.overflowY = 'scroll';
 }
+
+let init =()=>{
+    searchArray.push("Rainbow");
+    searchArray.push("get");
+    searchArray.push("getFormat");
+    searchArray.push("getColor");
+    searchArray.push("getBG");
+    searchArray.push("getFormatColor");
+    searchArray.push("getFormatBG");
+    searchArray.push("getColorBG");
+    searchArray.push("getRainbow");
+    searchArray.push("getFormatString");
+    searchArray.push("getColorString");
+    searchArray.push("getBGString");
+    searchArray.push("getFormatColorString");
+    searchArray.push("getFormatBGString");
+    searchArray.push("getColorBGString");
+    searchArray.push("getRainbowString");
+}
