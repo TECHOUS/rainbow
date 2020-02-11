@@ -14,7 +14,7 @@
     height: 0%
     width: 100%
     position: fixed
-    z-index: 1
+    z-index: 2
     bottom: 0
     right: 0
     background-color: rgb(0,0,0)
@@ -239,9 +239,12 @@ section p
 // DEVELOPER USE SECTION
 #intellij-output-div
     overflow-x: scroll
+    text-align: center
 
-#intellijImage1
-    height: 200px
+#intellijImage1,
+#intellijImage2
+    // height: 200px
+    width: 100%
 
 .developer-use-ol
     padding-left: 20px
@@ -255,16 +258,17 @@ section p
     word-spacing: 2px
 
 .artifact
-    height: 300px
+    width: 100%
 
 .artifact-div
     overflow-x: scroll
+    text-align: center
 
 .eclipse
-    height: 200px
+    width: 100%
 
 .eclipse-export
-    height: 420px
+    width: 100%
 
 #textarea1,
 #textarea2,
@@ -320,6 +324,9 @@ section p
 
 //===============================//
 // LICENSE SECTION
+#rbw-license
+    min-height: 60vh
+
 #rbw-license p
     font-size: 20px
     margin: 10px

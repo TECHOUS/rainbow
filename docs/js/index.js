@@ -12,6 +12,11 @@ rainbowNavList.addEventListener('click', navigation);
 // if the image is viewed in website browser remove the scroll bar from below
 if(!isMobile){
     document.getElementById('mavenImageDiv').style.overflowX = "hidden";
+    document.getElementById('intellij-output-div').style.overflowX = "hidden";
+    let arr = document.getElementsByClassName('artifact-div');
+    for(let i=0;i<arr.length;i++){
+        arr[i].style.overflowX = "hidden";
+    }
 }
 
 function navigation(){

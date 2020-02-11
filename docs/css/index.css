@@ -150,7 +150,7 @@
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   bottom: 0;
   right: 0;
   background-color: black;
@@ -358,10 +358,12 @@ section p {
   overflow: hidden; }
 
 #intellij-output-div {
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  text-align: center; }
 
-#intellijImage1 {
-  height: 200px; }
+#intellijImage1,
+#intellijImage2 {
+  width: 100%; }
 
 .developer-use-ol {
   padding-left: 20px; }
@@ -375,16 +377,17 @@ section p {
   word-spacing: 2px; }
 
 .artifact {
-  height: 300px; }
+  width: 100%; }
 
 .artifact-div {
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  text-align: center; }
 
 .eclipse {
-  height: 200px; }
+  width: 100%; }
 
 .eclipse-export {
-  height: 420px; }
+  width: 100%; }
 
 #textarea1,
 #textarea2,
@@ -434,6 +437,9 @@ section p {
 #rbw-version {
   min-height: 30vh; }
 
+#rbw-license {
+  min-height: 60vh; }
+
 #rbw-license p {
   font-size: 20px;
   margin: 10px;
@@ -445,16 +451,43 @@ footer {
   padding: 30px;
   text-align: center; }
 
+.footer-div {
+  display: inline-block;
+  padding: 30px; }
+
+#footer-docs {
+  text-align: initial; }
+
+#footer-header-docs,
+#footer-header-community {
+  color: #BAF2BB;
+  padding: 10px;
+  padding-left: 0; }
+
+.footer-ol {
+  list-style-type: none; }
+
+.footer-links {
+  color: white;
+  text-decoration: none; }
+
+#footer-community {
+  float: right; }
+
+#footer-poweredby {
+  font-size: 22px; }
+
+#footer-poweredby-span {
+  margin-left: -80px; }
+
+#lower-footer {
+  text-align: center; }
+
 #footer-techous-image {
   height: 60px;
   width: 80px;
-  float: right;
-  margin-left: -70px;
-  margin-right: 70px; }
-
-#footer-poweredby {
-  font-size: 22px;
-  margin-bottom: 50px; }
+  margin-left: 150px;
+  margin-top: -100px; }
 
 /* RESPONSIVENESS */
 @media screen and (min-width: 674px) {
@@ -482,6 +515,13 @@ footer {
 
   #description-hr > p {
     font-size: 24px; } }
+@media (min-width: 520px) and (max-width: 697px) {
+  #footer-community {
+    margin-right: 70px; } }
+@media screen and (min-width: 698px) {
+  #footer-poweredby {
+    float: left;
+    margin-top: 50px; } }
 @media (min-width: 426px) and (max-width: 768px) {
   #searchResults {
     width: 240px; }
@@ -495,6 +535,25 @@ footer {
     margin-right: 25px; }
 
   #getting-started-section {
+    margin-left: 25px;
+    margin-right: 25px; }
+
+  #rbw-developer-use {
+    margin-left: 25px;
+    margin-right: 25px; }
+
+  .artifact,
+  .eclipse,
+  .eclipse-export,
+  #intellijImage1,
+  #intellijImage2 {
+    width: 90%; }
+
+  #rbw-library-jar-usage,
+  #github-java-package-use,
+  #rbw-contribution,
+  #rbw-license,
+  #rbw-version {
     margin-left: 25px;
     margin-right: 25px; } }
 @media (min-width: 769px) and (max-width: 991px) {
@@ -520,7 +579,29 @@ footer {
     text-align: center; }
 
   #mavenImage {
-    width: 99%; } }
+    width: 99%; }
+
+  #rbw-developer-use {
+    margin-left: 60px;
+    margin-right: 60px; }
+
+  .artifact,
+  .eclipse,
+  .eclipse-export,
+  #intellijImage1,
+  #intellijImage2 {
+    width: 75%; }
+
+  #rbw-library-jar-usage,
+  #github-java-package-use,
+  #rbw-contribution,
+  #rbw-license,
+  #rbw-version {
+    margin-left: 60px;
+    margin-right: 60px; }
+
+  #footer-community {
+    margin-right: 11%; } }
 /* TABLETS/DESKTOPS */
 @media (min-width: 992px) and (max-width: 1199px) {
   #header-buttons-search {
@@ -552,7 +633,31 @@ footer {
     text-align: center; }
 
   #mavenImage {
-    width: 99%; } }
+    width: 99%; }
+
+  #rbw-developer-use {
+    margin-left: 90px;
+    margin-right: 90px; }
+
+  .artifact,
+  .eclipse,
+  #intellijImage1,
+  #intellijImage2 {
+    width: 75%; }
+
+  .eclipse-export {
+    width: 50%; }
+
+  #rbw-library-jar-usage,
+  #github-java-package-use,
+  #rbw-contribution,
+  #rbw-license,
+  #rbw-version {
+    margin-left: 90px;
+    margin-right: 90px; }
+
+  #footer-community {
+    margin-right: 18%; } }
 /* LARGE */
 @media screen and (min-width: 1200px) {
   #header-buttons-search {
@@ -598,10 +703,39 @@ footer {
     margin-right: 300px; }
 
   #mavenImageDiv {
-    text-align: center;
-    opacity: 0.95; }
+    text-align: center; }
 
-  #mavenImageDiv:hover {
-    opacity: 1; } }
+  #rbw-developer-use {
+    margin-left: 300px;
+    margin-right: 300px; }
+
+  .artifact,
+  .eclipse,
+  #intellijImage1,
+  #intellijImage2 {
+    width: 65%; }
+
+  .eclipse-export {
+    width: 40%; }
+
+  #rbw-library-jar-usage,
+  #github-java-package-use,
+  #rbw-contribution,
+  #rbw-license,
+  #rbw-version {
+    margin-left: 300px;
+    margin-right: 300px; }
+
+  #footer-docs {
+    margin-left: 10%; }
+
+  #footer-community {
+    margin-right: 20%; }
+
+  #footer-poweredby {
+    margin-left: 18%; }
+
+  .footer-links:hover {
+    color: #BAD7F2; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -448,9 +448,11 @@
                         </textarea>
                     </div>
                     <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
-                    <a href="images/intellij2.png" target="_blank">
-                        <img src="images/intellij2.png" alt="tricolor image"/>
-                    </a>
+                    <div class="artifact-div">
+                        <a href="images/intellij2.png" target="_blank">
+                            <img src="images/intellij2.png" alt="tricolor image" id="intellijImage2"/>
+                        </a>
+                    </div>
                 </ol>
             </div>
             <hr class="section-hr" id="intellij-idea-building-local-artifacts-and-use-of-library-jar-hr">
@@ -535,7 +537,7 @@
                     <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
                     <div class="artifact-div">
                         <a href="images/eclipse2.png" target="_blank">
-                            <img src="images/eclipse2.png" alt="tricolor image"/>
+                            <img src="images/eclipse2.png" alt="tricolor image" class="eclipse"/>
                         </a>
                     </div>
                 </ol>
@@ -608,7 +610,7 @@
                     <li>Run the Hello.java file then you will see the output of the new method which we have created.</li>
                     <div class="artifact-div">
                         <a href="images/vscode2.png" target="_blank">
-                            <img src="images/vscode2.png" alt="tricolor image"/>
+                            <img src="images/vscode2.png" alt="tricolor image" class="eclipse"/>
                         </a>
                     </div>
                 </ol>
@@ -881,13 +883,32 @@
 
     <!-- FOOTER SECTION -->
     <footer>
-        <div id="footer-poweredby">
-            <span id="footer-poweredby-span">Powered By</span>
-            <a href="https://techous.github.io/">
-                <img src="images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
-            </a>
+        <div id="upper-footer">
+            <div class="footer-div" id="footer-docs">
+                <h4 id="footer-header-docs">DOCS</h4>
+                <ul class="footer-ol">
+                    <li><a href="#getting-started-hr" class="footer-links">Getting Started</a></li>
+                    <li><a href="#developer-use-hr" class="footer-links">Developer Use</a></li>
+                    <li><a href="#library-jar-use-hr" class="footer-links">Library Jar Use</a></li>
+                    <li><a href="#contribution-hr" class="footer-links">Contributing</a></li>
+                </ul>
+            </div>
+            <div class="footer-div" id="footer-community">
+                <h4 id="footer-header-community">COMMUNITY</h4>
+                <ul class="footer-ol">
+                    <li><a href="https://github.com/TechOUs/rainbow/blob/master/CODE_OF_CONDUCT.md" class="footer-links">Code of Conduct</a></li>
+                    <li><a href="https://github.com/TechOUs" class="footer-links">Our Community</a></li>
+                </ul>
+            </div>
+            <div id="footer-poweredby">
+                <span id="footer-poweredby-span">Powered By</span>
+                <br>
+                <a href="https://techous.github.io/">
+                    <img src="images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+                </a>
+            </div>
         </div>
-        <div>
+        <div id="lower-footer">
             Copyright &copy; TechOUs 2020
         </div>
     </footer>
