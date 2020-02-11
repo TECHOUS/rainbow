@@ -28,7 +28,8 @@
 #copyToClipboard9,
 #copyToClipboard10 {
   float: right;
-  margin-top: -8px; }
+  margin-top: -8px;
+  cursor: pointer; }
 
 .fa-clipboard {
   font-size: 20px; }
@@ -220,7 +221,8 @@ section p {
   padding-top: 250px;
   background-color: #282c34;
   color: #BAD7F2;
-  text-align: center; }
+  text-align: center;
+  min-height: 70vh; }
 
 #description-hr > h1 {
   font-size: 2em; }
@@ -340,7 +342,8 @@ section p {
   outline: none;
   padding: 10px 25px;
   background-color: #F2BAC9;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
 
 #downloadDiv {
   text-align: center; }
@@ -481,13 +484,43 @@ footer {
     font-size: 24px; } }
 @media (min-width: 426px) and (max-width: 768px) {
   #searchResults {
-    width: 240px; } }
+    width: 240px; }
+
+  .documentation-hr,
+  .method-description,
+  .docs-field-details-div,
+  .docs-method-details,
+  .docs-constructors {
+    margin-left: 25px;
+    margin-right: 25px; }
+
+  #getting-started-section {
+    margin-left: 25px;
+    margin-right: 25px; } }
 @media (min-width: 769px) and (max-width: 991px) {
   #header-buttons-search {
     width: 80%; }
 
   #searchResults {
-    width: 280px; } }
+    width: 280px; }
+
+  .documentation-hr,
+  .method-description,
+  .docs-field-details-div,
+  .docs-method-details,
+  .docs-constructors {
+    margin-left: 60px;
+    margin-right: 60px; }
+
+  #getting-started-section {
+    margin-left: 60px;
+    margin-right: 60px; }
+
+  #mavenImageDiv {
+    text-align: center; }
+
+  #mavenImage {
+    width: 99%; } }
 /* TABLETS/DESKTOPS */
 @media (min-width: 992px) and (max-width: 1199px) {
   #header-buttons-search {
@@ -501,7 +534,25 @@ footer {
     margin-right: 30px; }
 
   #description-hr {
-    padding-top: 280px; } }
+    padding-top: 280px; }
+
+  .documentation-hr,
+  .method-description,
+  .docs-field-details-div,
+  .docs-method-details,
+  .docs-constructors {
+    margin-left: 90px;
+    margin-right: 90px; }
+
+  #getting-started-section {
+    margin-left: 90px;
+    margin-right: 90px; }
+
+  #mavenImageDiv {
+    text-align: center; }
+
+  #mavenImage {
+    width: 99%; } }
 /* LARGE */
 @media screen and (min-width: 1200px) {
   #header-buttons-search {
@@ -528,6 +579,29 @@ footer {
     color: #BAD7F2; }
 
   #description-hr {
-    padding-top: 300px; } }
+    padding-top: 300px; }
+
+  .documentation-hr,
+  .method-description,
+  .docs-field-details-div,
+  .docs-method-details,
+  .docs-constructors {
+    margin-left: 300px;
+    margin-right: 300px; }
+
+  .moreButton:hover,
+  #downloadButton:hover {
+    background-color: #BAD7F2; }
+
+  #getting-started-section {
+    margin-left: 300px;
+    margin-right: 300px; }
+
+  #mavenImageDiv {
+    text-align: center;
+    opacity: 0.95; }
+
+  #mavenImageDiv:hover {
+    opacity: 1; } }
 
 /*# sourceMappingURL=index.css.map */

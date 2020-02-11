@@ -2,14 +2,19 @@ let rainbowLogo = document.getElementById('rbw-logo');
 let rainbowNavScreen = document.getElementById("rbwNavScreen");
 let screenFlag = false;
 let rainbowNavList = document.getElementById('rbw-navlist');
+let navLogo = document.getElementById('rbw-logo');
+let closebtn = document.getElementById('closebtn');
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 rainbowLogo.addEventListener("click", navigation);
 rainbowNavList.addEventListener('click', navigation);
 
+// if the image is viewed in website browser remove the scroll bar from below
+if(!isMobile){
+    document.getElementById('mavenImageDiv').style.overflowX = "hidden";
+}
+
 function navigation(){
-    let navLogo = document.getElementById('rbw-logo');
-    let closebtn = document.getElementById('closebtn');
-    let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if(screenFlag){
         screenFlag = false;
         closeNavigation();
@@ -26,10 +31,6 @@ function openNavigation(){
     const body = document.body;
     body.style.overflowY = 'hidden';
 
-    let navLogo = document.getElementById('rbw-logo');
-    let closebtn = document.getElementById('closebtn');
-    let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    
     // manage index nav icon according to desktop browser
     if(window.innerWidth>=1200 && !isMobile){
         navLogo.style.right = "30px";
@@ -42,7 +43,6 @@ function closeNavigation(){
     const body = document.body;
     body.style.overflowY = 'scroll';
 
-    let navLogo = document.getElementById('rbw-logo');
     if(window.innerWidth>=1200){
         navLogo.style.right = "15px";
     }
