@@ -1,4 +1,16 @@
-# Rainbow ![GitHub repo size](https://img.shields.io/github/repo-size/TechOUs/rainbow) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/TechOUs/rainbow) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/TechOUs/rainbow) ![GitHub stars](https://img.shields.io/github/stars/TechOUs/rainbow?style=social) ![GitHub issues](https://img.shields.io/github/issues/TechOUs/rainbow) ![GitHub forks](https://img.shields.io/github/forks/TechOUs/rainbow?style=social)
+<p align="center">
+    <img src="docs/images/logos/circle.png" alt="rainbow logo" />
+    <h1 align="center">rainbow</h1>
+    <h2 align="center">Best Java library to create colorful User Interfaces for Linux terminals.</h2>
+    <h4 align="center">
+        <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/techous/rainbow">
+        <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/techous/rainbow">
+        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/TechOUS/rainbow"/>
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/techous/rainbow">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/techous/rainbow?style=social">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/techous/rainbow?style=social">
+    </h4>
+</p>
 
 Rainbow is the best library to create colorful User Interfaces for Linux Terminals.
 
