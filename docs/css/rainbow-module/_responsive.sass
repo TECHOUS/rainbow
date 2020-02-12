@@ -1,0 +1,125 @@
+/* RESPONSIVENESS */
+// change the nav for bigger screens
+@media screen and (min-width: 674px)
+    // unhide the rainbow full logo
+    #header-buttons-rainbow
+        display: inline
+    // unhide the docs link
+    #header-docs-nav            
+        display: inline
+    #header-buttons-github-div
+        position: relative
+        background-color: transparent
+    // change the github link place
+    #header-buttons-github
+        color: white
+    // resize the rainbow logo
+    #rainbowMainLogo
+        font-size: 35px
+
+@media (min-width: 520px) and (max-width: 697px)
+    #footer-community
+        margin-right: 70px
+
+@media screen and (min-width: 698px)
+    #footer-poweredby
+        float: left
+        margin-top: 50px
+
+// LARGE MOBILE
+@media (min-width: 426px) and (max-width: 768px)
+    #searchResults
+        width: 240px
+    // DOC SECTION
+    #rainbow-section
+        margin-left: 25px
+        margin-right: 25px
+    .field
+        margin-bottom: 25px
+
+// tablets
+@media (min-width: 769px) and (max-width: 991px)
+    // updating search module
+    #header-buttons-search
+        width: 80%
+    #searchResults
+        width: 280px
+    // footer
+    #footer-community
+        margin-right: 11%
+    // DOC SECTION
+    #rainbow-section
+        margin-left: 60px
+        margin-right: 60px
+    .field
+        margin-bottom: 50px
+    // NAV
+    .navLine
+        width: 40%
+    .bigNavLine
+        width: 94%
+
+/* TABLETS/DESKTOPS */
+@media (min-width: 992px) and (max-width: 1199px)
+    #header-buttons-search
+        width: 80%
+    #searchResults
+        width: 280px
+    .header-buttons
+        margin-left: 30px
+        margin-right: 30px
+    // footer
+    #footer-community
+        margin-right: 18%
+    // DOC SECTION
+    #rainbow-section
+        margin-left: 90px
+        margin-right: 90px
+    .field
+        margin-bottom: 60px
+    // NAV
+    .navLine
+        width: 35%
+    .bigNavLine
+        width: 95%
+
+/* LARGE */
+@media screen and (min-width: 1200px)
+    #header-buttons-search
+        width: 80%
+    #searchResults
+        width: 280px
+    .header-buttons
+        margin-left: 70px
+        margin-right: 70px
+
+    // enable hover effects for desktops
+    #header-buttons-github:hover,
+    #header-docs-link:hover
+        color: $paleAqua
+
+    // documentation section
+    #rainbow-section
+        margin-left: 300px
+        margin-right: 300px
+    .field
+        margin-bottom: 60px
+    
+    // NAV
+    .navLinks:hover
+        color: $paleAqua
+    .navLine
+        width: 20%
+    .bigNavLine
+        width: 96%
+
+    // footer
+    #footer-docs
+        margin-left: 10%
+    #footer-community
+        margin-right: 20%
+    #footer-poweredby
+        margin-left: 18%
+    // footer hover effects
+    .footer-links:hover
+        color: $paleAqua
