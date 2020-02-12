@@ -93,7 +93,8 @@
 #header-buttons-version {
   color: #F2E2BA;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: Arial; }
 
 #header-buttons-github {
   color: black;

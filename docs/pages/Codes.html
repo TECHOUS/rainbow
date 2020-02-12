@@ -21,8 +21,13 @@
     <!-- HEADER -->
     <header id="header">
         <div class="header-buttons">
-            <a href="../index.html"><i class="fas fa-rainbow fa-2x"></i></a>
-            <span id="header-buttons-rainbow"><a href="#rbw-description">Rainbow</a></span>
+            <a href="../index.html"><i class="fas fa-rainbow" id="rainbowMainLogo"></i></a>
+            <span id="header-buttons-rainbow"><a href="#documentation-section">Rainbow</a></span>
+        </div>
+        <div class="header-buttons" id="header-docs-nav">
+            <a href="../index.html#rainbow-java-package-hr" id="header-docs-link">
+                Tutorial
+            </a>
         </div>
         <div class="header-buttons">
             <div id="header-buttons-search-div">
@@ -507,7 +512,7 @@
                     <p class="code-heading">public static final String BGMGREEN</p>
                     <p class="field-description">Used for medium green background.</p>
                     <div class="field-div heading">
-                        <img src="../images/docs/bgmgreen.png" alt="bgmgreen class="field-img">
+                        <img src="../images/docs/bgmgreen.png" alt="bgmgreen" class="field-img">
                         <h4>mgreen</h4>
                     </div>
                 </div>
@@ -573,7 +578,7 @@
                     <p class="code-heading">public static final String BGLWHITE</p>
                     <p class="field-description">Used for light white background.</p>
                     <div class="field-div heading">
-                        <img src="../images/docs/bglwhite.png" alt="bglwhite class="field-img">
+                        <img src="../images/docs/bglwhite.png" alt="bglwhite" class="field-img">
                         <h4>lwhite</h4>
                     </div>
                 </div>
@@ -639,13 +644,31 @@
 
     <!-- FOOTER SECTION -->
     <footer>
-        <div id="footer-poweredby">
-            <span id="footer-poweredby-span">Powered By</span>
-            <a href="https://techous.github.io/">
-                <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
-            </a>
+        <div id="upper-footer">
+            <div class="footer-div" id="footer-docs">
+                <h4 id="footer-header-docs">DOCS</h4>
+                <ul class="footer-ol">
+                    <li><a href="#formats-hr" class="footer-links">Formats</a></li>
+                    <li><a href="#colors-hr" class="footer-links">Colors</a></li>
+                    <li><a href="#backgrounds-hr" class="footer-links">Backgrounds</a></li>
+                </ul>
+            </div>
+            <div class="footer-div" id="footer-community">
+                <h4 id="footer-header-community">COMMUNITY</h4>
+                <ul class="footer-ol">
+                    <li><a href="https://github.com/TechOUs/rainbow/blob/master/CODE_OF_CONDUCT.md" class="footer-links">Code of Conduct</a></li>
+                    <li><a href="https://github.com/TechOUs" class="footer-links">Our Community</a></li>
+                </ul>
+            </div>
+            <div id="footer-poweredby">
+                <span id="footer-poweredby-span">Powered By</span>
+                <br>
+                <a href="https://techous.github.io/">
+                    <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+                </a>
+            </div>
         </div>
-        <div>
+        <div id="lower-footer">
             Copyright &copy; TechOUs 2020
         </div>
     </footer>
