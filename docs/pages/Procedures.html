@@ -21,8 +21,13 @@
     <!-- HEADER -->
     <header id="header">
         <div class="header-buttons">
-            <a href="../index.html"><i class="fas fa-rainbow fa-2x"></i></a>
-            <span id="header-buttons-rainbow"><a href="#rbw-description">Rainbow</a></span>
+            <a href="../index.html"><i class="fas fa-rainbow" id="rainbowMainLogo"></i></a>
+            <span id="header-buttons-rainbow"><a href="#procedures-section">Rainbow</a></span>
+        </div>
+        <div class="header-buttons" id="header-docs-nav">
+            <a href="../index.html#rainbow-java-package-hr" id="header-docs-link">
+                Tutorial
+            </a>
         </div>
         <div class="header-buttons">
             <div id="header-buttons-search-div">
@@ -228,13 +233,33 @@
     
     <!-- FOOTER SECTION -->
     <footer>
-        <div id="footer-poweredby">
-            <span id="footer-poweredby-span">Powered By</span>
-            <a href="https://techous.github.io/">
-                <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
-            </a>
+        <div id="upper-footer">
+            <div class="footer-div" id="footer-docs">
+                <h4 id="footer-header-docs">DOCS</h4>
+                <ul class="footer-ol">
+                    <li><a href="#get-hr" class="footer-links">get method</a></li>
+                    <li><a href="#getformat-hr" class="footer-links">getFormat method</a></li>
+                    <li><a href="#getcolor-hr" class="footer-links">getColor method</a></li>
+                    <li><a href="#getbg-hr" class="footer-links">getBG method</a></li>
+                    <li><a href="#getrainbow-hr" class="footer-links">getRainbow method</a></li>
+                </ul>
+            </div>
+            <div class="footer-div" id="footer-community">
+                <h4 id="footer-header-community">COMMUNITY</h4>
+                <ul class="footer-ol">
+                    <li><a href="https://github.com/TechOUs/rainbow/blob/master/CODE_OF_CONDUCT.md" class="footer-links">Code of Conduct</a></li>
+                    <li><a href="https://github.com/TechOUs" class="footer-links">Our Community</a></li>
+                </ul>
+            </div>
+            <div id="footer-poweredby">
+                <span id="footer-poweredby-span">Powered By</span>
+                <br>
+                <a href="https://techous.github.io/">
+                    <img src="../images/logos/techous1.png" alt="techous image" id="footer-techous-image"/>
+                </a>
+            </div>
         </div>
-        <div>
+        <div id="lower-footer">
             Copyright &copy; TechOUs 2020
         </div>
     </footer>
