@@ -1,12 +1,12 @@
 <p align="center">
     <img src="docs/images/logos/circle.png" alt="rainbow logo" />
-    <h1 align="center">rainbow</h1>
+    <h1 align="center"><a href="https://techous.github.io/rainbow/">rainbow</a></h1>
     <h2 align="center">Best Java library to create colorful User Interfaces for Linux terminals.</h2>
     <h4 align="center">
-        <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/techous/rainbow">
         <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/techous/rainbow">
-        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/TechOUS/rainbow"/>
+        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/TechOUs/rainbow"/>
         <img alt="GitHub issues" src="https://img.shields.io/github/issues/techous/rainbow">
+        <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/TechOUs/rainbow">
         <img alt="GitHub forks" src="https://img.shields.io/github/forks/techous/rainbow?style=social">
         <img alt="GitHub stars" src="https://img.shields.io/github/stars/techous/rainbow?style=social">
     </h4>
@@ -43,11 +43,11 @@ and many more
 
 Rainbow has three methods from which you can use in your project.
 
-* [For Developers]()
-* [For jar lovers]()
-* [By using package registory(in progress)]()
+* [For Developers](https://techous.github.io/rainbow/#developer-use-hr)
+* [For jar lovers](https://techous.github.io/rainbow/#library-jar-use-hr)
+* [By using package registory(in progress)](https://techous.github.io/rainbow/#github-java-package-use-hr)
 
-For detailed installation guidelines according to your IDE read [installation instructions here]().
+For detailed installation guidelines according to your IDE read [installation instructions here](https://techous.github.io/rainbow/#getting-started-hr).
 
 ## Examples
 
@@ -70,13 +70,17 @@ public class Main{
 }
 ```
 
+<p align="center">
+    <a href="https://repl.it/@techous/RainbowPlayground4">Try on Rainbow PlayGround</a>
+</p>
+
 Here is the output of the program when you run the sample code.
 
 ![rainbow image](docs/images/readme1.png)
 
 ## Documentation
 
-For documentation take look at our [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Ftechous.github.io%2Ftreasurejs.github.io%2F) here]().
+For documentation take look at our [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Ftechous.github.io%2Ftreasurejs.github.io%2F) here](https://techous.github.io/rainbow/#rainbow-java-package-hr).
 
 ## Contributing to rainbow ![GitHub contributors](https://img.shields.io/github/contributors/TechOUs/rainbow)
 
