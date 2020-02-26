@@ -4,14 +4,20 @@ let results = [];
 init();                                                         // this function initializes all the values
 let find = document.getElementById('header-buttons-search');
 let searchResults = document.getElementById('searchResults');
-
+let searchCross = document.getElementById('searchCross');
+const isMoz = navigator.userAgent.indexOf("Firefox");
 find.addEventListener("keyup",(event)=>{
     if(find.value.length > 0){
         showSearchResults();
+        showSearchCross();
         removeSearchResults();
         search(find.value);
+        if(event.keyCode == 13){
+            find.blur();
+        }
     }else{
         hideSearchResults();
+        hideSearchCross();
     }
 })
 
@@ -68,6 +74,7 @@ const render = (results)=>{
         div.addEventListener('click',()=>{
             hideSearchResults();
             clearSearchField();
+            hideSearchCross();
         });
 
         let a = document.createElement("a");
@@ -104,3 +111,21 @@ const createPageLink = (result)=>{
 const clearSearchField = ()=>{
     find.value = "";
 }
+
+const showSearchCross = ()=>{
+    if(isMoz != -1){
+        searchCross.style.display = "inline";
+    }
+}
+
+const hideSearchCross = ()=>{
+    if(isMoz != -1){
+        searchCross.style.display = "none";
+    }
+}
+
+searchCross.addEventListener('click', ()=>{
+    hideSearchResults();
+    clearSearchField();
+    hideSearchCross();
+})
