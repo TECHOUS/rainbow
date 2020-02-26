@@ -4,16 +4,20 @@ let results = [];
 init();                                                         // this function initializes all the values
 let find = document.getElementById('header-buttons-search');
 let searchResults = document.getElementById('searchResults');
-let searchCross = document.getElementById('searchCross');
+
 find.addEventListener("keyup",(event)=>{
     if(find.value.length > 0){
         showSearchResults();
-        showSearchCross();
         removeSearchResults();
         search(find.value);
     }else{
         hideSearchResults();
-        hideSearchCross();
+    }
+})
+
+find.addEventListener("search", (event)=>{
+    if(event.type === "search"){
+        hideSearchResults();
     }
 })
 
@@ -64,7 +68,6 @@ const render = (results)=>{
         div.addEventListener('click',()=>{
             hideSearchResults();
             clearSearchField();
-            hideSearchCross();
         });
 
         let a = document.createElement("a");
@@ -101,17 +104,3 @@ const createPageLink = (result)=>{
 const clearSearchField = ()=>{
     find.value = "";
 }
-
-const showSearchCross = ()=>{
-    searchCross.style.display = "inline";
-}
-
-const hideSearchCross = ()=>{
-    searchCross.style.display = "none";
-}
-
-searchCross.addEventListener('click', ()=>{
-    hideSearchResults();
-    clearSearchField();
-    hideSearchCross();
-})
