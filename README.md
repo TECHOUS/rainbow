@@ -84,7 +84,7 @@ For documentation take look at our [![Website](https://img.shields.io/website?do
 
 ## Contributing to rainbow ![GitHub contributors](https://img.shields.io/github/contributors/TechOUs/rainbow)
 
-For contributing read our contribution guidelines [here](CONTRIBUTING.md).
+For contributing read our contribution guidelines [here](.github/CONTRIBUTING.md).
 
 ## LICENSE
 
