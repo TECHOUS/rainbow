@@ -125,7 +125,8 @@
   background-color: #BAD7F2;
   color: black;
   display: none;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  z-index: 100; }
 
 .searchResultsDiv {
   border-bottom: 1px solid black;
@@ -169,7 +170,8 @@
   color: white;
   text-decoration: none;
   z-index: 1;
-  padding: 0; }
+  padding: 0;
+  outline: none; }
 
 #rbwNavScreen-content {
   position: absolute;

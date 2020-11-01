@@ -5,15 +5,25 @@ init();                                                         // this function
 let find = document.getElementById('header-buttons-search');
 let searchResults = document.getElementById('searchResults');
 let searchCross = document.getElementById('searchCross');
+const isMoz = navigator.userAgent.indexOf("Firefox");
 find.addEventListener("keyup",(event)=>{
     if(find.value.length > 0){
         showSearchResults();
         showSearchCross();
         removeSearchResults();
         search(find.value);
+        if(event.keyCode == 13){
+            find.blur();
+        }
     }else{
         hideSearchResults();
         hideSearchCross();
+    }
+})
+
+find.addEventListener("search", (event)=>{
+    if(event.type === "search"){
+        hideSearchResults();
     }
 })
 
@@ -103,11 +113,15 @@ const clearSearchField = ()=>{
 }
 
 const showSearchCross = ()=>{
-    searchCross.style.display = "inline";
+    if(isMoz != -1){
+        searchCross.style.display = "inline";
+    }
 }
 
 const hideSearchCross = ()=>{
-    searchCross.style.display = "none";
+    if(isMoz != -1){
+        searchCross.style.display = "none";
+    }
 }
 
 searchCross.addEventListener('click', ()=>{
