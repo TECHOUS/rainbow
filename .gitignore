@@ -1,5 +1,5 @@
 # IGNORE FILES FOR THE PROJECT
 
 .idea
-rainbow.iml
+*.iml
 server
